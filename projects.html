@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by James Gregory Walsh – data analysis, applied psychology, and law enforcement innovation." />
+  <title>Projects | James Gregory Walsh</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon and Apple Touch Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/Favicons/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/Favicons/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/Favicons/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/Favicons/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/Favicons/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/Favicons/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/Favicons/favicon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/Favicons/favicon-152-precomposed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Favicons/favicon-192.png">
+  <link rel="manifest" href="assets/Favicons/manifest.json">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Branding -->
+      <div class="leading-tight">
+        <h1 class="text-xl font-serif font-bold">James Gregory Walsh</h1>
+        <p class="text-blue-100 text-sm">Professional Portfolio</p>
+      </div>
+
+      <!-- Mobile Toggle Button (Hamburger) -->
+      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <ul id="mobileMenu" class="sm:flex hidden gap-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
+          <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
+          <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      toggleBtn.addEventListener('click', () => {
+        // Toggle the "hidden" class each time the user clicks
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+  <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
+    <section>
+      <h2 class="text-3xl font-semibold mb-4">Selected Projects</h2>
+      <p class="mb-8 text-lg">The projects below represent my applied work in behavioral analysis, law enforcement data visualization, and analytical problem-solving. Each integrates elements of psychological insight, statistical modeling, and operational relevance.</p>
+
+      <div class="space-y-10">
+        <div>
+          <h3 class="text-xl font-bold">Albany Aegis Initiative</h3>
+          <p class="text-sm text-gray-500">2024 – Ongoing</p>
+          <p class="mt-2">A civic-focused initiative designed to integrate behavioral psychology, predictive modeling, and law enforcement strategy to enhance community resilience in Albany, NY.</p>
+          <p class="mt-1"><strong>Tools:</strong> SPSS, R, ACS Data, Tailwind CSS</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold">Law Enforcement Transition Model</h3>
+          <p class="text-sm text-gray-500">2023</p>
+          <p class="mt-2">Developed a structured framework outlining career transition from clinical psychology to investigative roles within federal and state law enforcement. Grounded in operational psychology and analytic reasoning.</p>
+          <p class="mt-1"><strong>Tools:</strong> Research synthesis, applied psychology, data visualization</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold">SPSS-Based Behavioral Risk Assessment Framework</h3>
+          <p class="text-sm text-gray-500">2022</p>
+          <p class="mt-2">Built an SPSS-based framework to structure, score, and visualize behavioral risk indicators drawn from clinical settings. Adaptable for pre-screening, monitoring, or post-incident review.</p>
+          <p class="mt-1"><strong>Tools:</strong> SPSS, case coding, descriptive stats, visual analytics</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+        <ul class="flex space-x-4">
+          <li><a href="mailto:contact@jgwalsh.net" class="hover:text-blue-500 transition">Email</a></li>
+          <li><a href="/privacy.html" class="hover:text-blue-500 transition">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="hover:text-blue-500 transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

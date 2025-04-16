@@ -1,0 +1,209 @@
+/* Consolidated styles from duplicate style.css files */
+
+/* Global Reset & Base Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1e293b; /* slate-800 */
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 2rem;
+}
+
+/* Media Query: reduce body padding on smaller devices */
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+/* Headers */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #0f172a; /* slate-900 */
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+/* Navigation (Header) */
+header {
+  background-color: #1e40af; /* Blue-900 or your preferred header color */
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 50; /* Ensure it stays on top when scrolling */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Container for nav content */
+header .header-content {
+  max-width: 1200px;  /* Adjust if needed */
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Branding / Title */
+header .branding {
+  /* If you have specific styles for your site branding, place them here */
+}
+
+/* Desktop Nav */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+}
+
+/* The UL is your main menu container */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* spacing between nav items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* White text for header nav */
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #cbd5e1; /* Slightly lighter on hover */
+}
+
+/* Mobile Toggle Button */
+button#menuToggle {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 1.5rem; 
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+button#menuToggle:hover {
+  color: #cbd5e1;
+}
+
+/* Hide your main UL on small devices if you’re using a toggle-based approach */
+@media (max-width: 640px) {
+  nav ul {
+    display: none; /* hidden by default on small screens */
+    flex-direction: column; /* stack items vertically */
+    gap: 1rem;
+    background-color: #1e40af; /* match your header color */
+    padding: 1rem;
+  }
+  
+  nav ul.show {
+    display: flex; /* toggled open class, e.g., .show */
+  }
+
+  button#menuToggle {
+    display: block; /* show the hamburger icon */
+  }
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f8fafc;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+.hero a.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.hero a.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Section Styling */
+section {
+  margin: 3rem 0;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+  padding: 2rem 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+body.dark-mode nav a {
+  color: #60a5fa;
+}
+
+body.dark-mode nav a:hover {
+  color: #93c5fd;
+}
+
+body.dark-mode .hero {
+  background-color: #1e293b;
+}
+
+body.dark-mode .hero p {
+  color: #cbd5e1;
+}
+
+body.dark-mode footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border-top-color: #334155;
+}

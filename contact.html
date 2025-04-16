@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact James Gregory Walsh – Professional portfolio in psychology, data, and public safety." />
+  <title>Contact – James Gregory Walsh</title>
+  
+  <!-- Tailwind CSS and Custom Styles -->
+  <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicons and Touch Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/Favicons/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/Favicons/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/Favicons/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/Favicons/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/Favicons/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/Favicons/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/Favicons/favicon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/Favicons/favicon-152-precomposed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Favicons/favicon-192.png">
+  <link rel="manifest" href="assets/Favicons/manifest.json">
+</head>
+<body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Branding -->
+      <div class="leading-tight">
+        <h1 class="text-xl font-serif font-bold">James Gregory Walsh</h1>
+        <p class="text-blue-100 text-sm">Professional Portfolio</p>
+      </div>
+
+      <!-- Mobile Toggle Button (Hamburger) -->
+      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <ul id="mobileMenu" class="sm:flex hidden gap-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
+          <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
+          <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-blue-900 mb-8 tracking-tight">Get in Touch</h2>
+
+    <!-- Two-Column Layout -->
+    <div class="bg-white rounded-xl shadow-md p-10 md:grid md:grid-cols-2 md:gap-12">
+      <!-- Contact Form -->
+      <div class="mb-10 md:mb-0 space-y-6">
+        <h3 class="text-xl font-semibold text-gray-800">Send a Message</h3>
+        <form action="https://formspree.io/f/mwplwzlg" method="POST" class="space-y-5">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="How can I help you?" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Send
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="space-y-8">
+        <!-- Basic Info -->
+        <div class="space-y-2 text-sm text-gray-800">
+          <h3 class="text-xl font-semibold text-gray-800">Contact Details</h3>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:jgwalsh@proton.me" class="text-blue-600 hover:underline">jgwalsh@proton.me</a>
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+16173833745" class="text-blue-600 hover:underline">(617) 383-3745</a>
+          </p>
+          <p><strong>Location:</strong> Albany, NY &amp; Boston, MA</p>
+          <a href="/assets/Profile.pdf" target="_blank" rel="noopener noreferrer" class="inline-block mt-3 px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded hover:bg-gray-700 transition">
+            View Résumé (PDF)
+          </a>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Digital Business Card -->
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold">Digital Business Card</h4>
+          <p class="text-sm text-gray-800">Access my digital contact card for easy saving or scanning:</p>
+          <a href="/card" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-green-700 text-white text-sm font-medium rounded hover:bg-green-600 transition">
+            View Digital Card
+          </a>
+        </div>
+
+        <!-- Social Links: Single Horizontal Row -->
+        <div>
+          <h4 class="text-lg font-semibold mb-3">Connect with Me</h4>
+          <div class="flex items-center justify-center space-x-6">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener noreferrer" class="transition hover:opacity-75" title="LinkedIn Profile" aria-label="LinkedIn">
+              <img src="assets/images/LI-In-Bug.png" alt="LinkedIn" class="h-10 w-auto object-contain">
+            </a>
+            <!-- Siena Alumni Network -->
+            <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank" rel="noopener noreferrer" class="transition hover:opacity-75" title="Siena Alumni Network" aria-label="Siena Alumni Network">
+              <img src="assets/images/siena-logo.png" alt="Siena Alumni Network" class="h-10 w-auto object-contain">
+            </a>
+            <!-- BU Email -->
+            <a href="mailto:jgwalsh@bu.edu" class="transition hover:opacity-75" title="Send Email via BU Email" aria-label="BU Email">
+              <img src="assets/images/bu-logo.png" alt="BU Email" class="h-10 w-auto object-contain">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of two-column layout -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+        <ul class="flex space-x-4">
+          <li><a href="mailto:contact@jgwalsh.net" class="hover:text-blue-500 transition">Email</a></li>
+          <li><a href="/privacy.html" class="hover:text-blue-500 transition">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="hover:text-blue-500 transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Intersection Observer for reveal animations (if needed)
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(section => {
+      section.classList.remove('reveal');
+      observer.observe(section);
+    });
+
+    // Mobile menu toggle
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    });
+
+    // JS to toggle the "hidden" class on #mobileMenu
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      toggleBtn.addEventListener('click', () => {
+        // Toggle the "hidden" class each time the user clicks
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

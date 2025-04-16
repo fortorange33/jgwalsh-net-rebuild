@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of James Gregory Walsh — integrating psychology, behavioral science, and law enforcement readiness." />
+  <meta name="author" content="James Gregory Walsh" />
+
+  <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
+
+  <!-- Favicon and Apple Touch Icons -->
+  <link rel="icon" href="assets/Favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png" />
+  <link rel="manifest" href="assets/Favicons/manifest.webmanifest" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio" />
+  <meta property="og:description" content="Showcasing my background in psychology, data analysis, and law enforcement readiness." />
+  <meta property="og:image" content="assets/images/portfolio-og.jpg" />
+  <meta property="og:url" content="https://www.jgwalsh.net" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio" />
+  <meta name="twitter:description" content="Showcasing my background in psychology, data analysis, and law enforcement readiness." />
+  <meta name="twitter:image" content="assets/images/portfolio-og.jpg" />
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Branding -->
+      <div class="leading-tight">
+        <h1 class="text-xl font-serif font-bold">James Gregory Walsh</h1>
+        <p class="text-blue-100 text-sm">Professional Portfolio</p>
+      </div>
+
+      <!-- Mobile Toggle Button (Hamburger) -->
+      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <ul id="mobileMenu" class="sm:flex hidden gap-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
+          <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
+          <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      toggleBtn.addEventListener('click', () => {
+        // Toggle the "hidden" class each time the user clicks
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+  <!-- Main Content -->
+  <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
+    <h2 class="text-3xl font-bold mb-6">Welcome</h2>
+    <p class="mb-4">
+      Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in psychology, data analysis, and law enforcement readiness.
+    </p>
+
+    <p class="mb-4">
+      I have over three years of experience as a mental health specialist at
+      <a href="https://en.wikipedia.org/wiki/McLean_Hospital"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="text-blue-700 underline">McLean Hospital</a>,
+      specifically within the
+      <a href="https://www.mcleanhospital.org/treatment/mclean-franciscan-child-and-adolescent-inpatient-program"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="text-blue-700 underline">McLean-Franciscan</a>
+      unit, a psychiatric hospital in Brighton, Massachusetts, affiliated with Harvard Medical School. My work involved
+      clinical assessment, crisis intervention, and interdisciplinary collaboration within acute psychiatric settings.
+    </p>
+
+    <p class="mb-4">
+      My educational foundation in psychology—spanning undergraduate and graduate-level training—is enhanced by strong
+      quantitative and analytical capabilities, particularly using SPSS, R, and Excel.
+    </p>
+
+    <p class="mb-4">
+      Returning home to Albany, New York, during the COVID-19 pandemic coincided with significant transformations in
+      clinical psychology and the broader mental health system, most notably the rise of teletherapy. Observing these
+      changes inspired me to reconsider my career direction and explore how my experience might align with alternative
+      professional pathways. This period of reassessment has motivated my current pursuit of opportunities within
+      federal or state law enforcement, aiming to address critical challenges facing local communities and the nation.
+    </p>
+
+    <h3 class="text-2xl font-semibold mt-10 mb-4">Core Competencies</h3>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li><strong>Behavioral Assessment and Crisis Intervention</strong></li>
+      <li><strong>Interdisciplinary Collaboration and Communication</strong></li>
+      <li><strong>Advanced Quantitative Analysis</strong> (SPSS, R, Excel)</li>
+      <li><strong>Applied Psychological Principles</strong></li>
+      <li><strong>Adaptability, Critical Thinking, and Analytical Problem-Solving</strong></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+        <ul class="flex space-x-4">
+          <li><a href="mailto:contact@jgwalsh.net" class="hover:text-blue-500 transition">Email</a></li>
+          <li><a href="/privacy.html" class="hover:text-blue-500 transition">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="hover:text-blue-500 transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

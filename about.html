@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | James Gregory Walsh</title>
+  <link rel="stylesheet" href="assets/css/tailwind.min.css" />https://img.shields.io/badge/priority-medium-yellow
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png">
+  <link rel="manifest" href="assets/Favicons/manifest.json">
+</head>
+<body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Branding -->
+      <div class="leading-tight">
+        <h1 class="text-xl font-serif font-bold">James Gregory Walsh</h1>
+        <p class="text-blue-100 text-sm">Professional Portfolio</p>
+      </div>
+      <!-- Mobile Toggle Button (Hamburger) -->
+      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
+        ☰
+      </button>
+      <!-- Navigation -->
+      <nav>
+        <ul id="mobileMenu" class="sm:flex hidden flex-col sm:flex-row gap-4 sm:gap-6 text-sm font-medium text-center sm:text-left">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
+          <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
+          <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
+    <section id="about" class="container mx-auto px-4 py-12 bg-white rounded-xl shadow-md max-w-4xl">
+      <h1 class="text-3xl font-bold text-blue-900 mb-8 tracking-tight">About | James Gregory Walsh</h1>
+
+      <p class="mb-4">Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy. My career began in clinical mental health and is now directed towards pursuing law enforcement roles where I can combine psychological insight with analytical precision.</p>
+
+      <p class="mb-4">My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.</p>
+
+      <p class="mb-4">Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.</p>
+
+      <p class="mb-4">The societal shifts highlighted during the COVID-19 pandemic, observed upon returning to Albany, New York, crystallized my professional direction. Witnessing the intersecting challenges within mental health systems and public institutions reinforced my conviction that principled, analytically-driven professionals are essential in modern law enforcement and public service. This led to the formation of my portfolio and its companion project, the <a href="https://albany.watch" class="text-blue-700 underline" target="_blank" rel="noopener">Albany Aegis Initiative</a>—a personal civic effort I developed to explore the integration of behavioral science, community safety, and operational intelligence.</p>
+
+      <p class="mb-8">My objective is to apply my interdisciplinary skill set—whether through research, field analysis, or collaboration—to serve and strengthen the institutions that protect our communities and uphold our legal and civic frameworks.</p>
+
+      <p class="mb-10">
+        For a detailed overview of my qualifications and experience, please
+        <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+        <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+          <li><a href="mailto:contact@jgwalsh.net" class="hover:text-blue-500 transition">Email</a></li>
+          <li><a href="/privacy.html" class="hover:text-blue-500 transition">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="hover:text-blue-500 transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

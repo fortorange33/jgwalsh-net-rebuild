@@ -1,0 +1,39 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.jgwalsh.businesscard",
+  "serialNumber": "001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "James Gregory Walsh",
+  "description": "Professional Contact Card",
+  "logoText": "JG Walsh",
+  "foregroundColor": "rgb(255, 255, 255)",
+  "backgroundColor": "rgb(28, 45, 74)",
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "name",
+        "label": "Name",
+        "value": "James Gregory Walsh"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "email",
+        "label": "Email",
+        "value": "jgwalsh@proton.me"
+      },
+      {
+        "key": "phone",
+        "label": "Phone",
+        "value": "(617) 383-3745"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "site",
+        "label": "Website",
+        "value": "https://jgwalsh.net"
+      }
+    ]
+  }
+}
