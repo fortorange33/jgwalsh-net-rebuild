@@ -8,11 +8,22 @@
 
   <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
 
-  <!-- Favicon and Apple Touch Icons -->
-  <link rel="icon" href="assets/Favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png" />
-  <link rel="manifest" href="assets/Favicons/manifest.webmanifest" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/Favicons/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/Favicons/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/Favicons/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/Favicons/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/Favicons/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/Favicons/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/Favicons/favicon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/Favicons/favicon-152-precomposed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/Favicons/favicon-192.png">
+  <link rel="manifest" href="assets/Favicons/manifest.json">
+  <meta name="theme-color" content="#1e40af">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio" />
@@ -48,12 +59,14 @@
 
       <!-- Mobile Toggle Button (Hamburger) -->
       <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
-        ☰
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
       </button>
 
       <!-- Navigation -->
       <nav>
-        <ul id="mobileMenu" class="sm:flex hidden gap-6 text-sm font-medium">
+        <ul id="mobileMenu" class="sm:flex hidden flex-col sm:flex-row gap-6 text-sm font-medium bg-blue-900 sm:bg-transparent sm:static absolute top-16 left-0 w-full sm:w-auto">
           <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
           <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
           <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
@@ -71,8 +84,8 @@
       const mobileMenu = document.getElementById('mobileMenu');
 
       toggleBtn.addEventListener('click', () => {
-        // Toggle the "hidden" class each time the user clicks
         mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
       });
     });
   </script>
