@@ -12,6 +12,7 @@ The project aims to deliver a clean, modern, and responsive website using **HTML
 ## 🚀 Features
 
 ### Website Sections
+
 - **About**: Academic and clinical background.
 - **Experience**: Résumé-style professional timeline.
 - **Projects**: Research and civic innovation efforts (e.g., Albany Aegis Initiative).
@@ -19,6 +20,7 @@ The project aims to deliver a clean, modern, and responsive website using **HTML
 - **404** and **Card Pass**: Custom error pages and Apple Wallet compatibility.
 
 ### Design Features
+
 - Responsive layout for optimal viewing on all devices.
 - Tailwind CSS for utility-first styling and reduced custom CSS usage.
 - Organized asset structure for improved maintainability.
@@ -37,6 +39,7 @@ The project aims to deliver a clean, modern, and responsive website using **HTML
 ## 🎯 Optimization Focus
 
 This repository prioritizes clean and efficient code. Recent optimizations include:
+
 1. **Eliminating Redundant Files**: Temporary files such as `about.html.tmp.html` and `contact.html.tmp.html` have been removed to maintain cleanliness.
 2. **Organizing Assets**: Directories are now logically structured to separate images, stylesheets, and scripts.
 3. **Tailwind CSS Efficiency**: Leveraging Tailwind's utility classes to minimize custom CSS and ensure a consistent, lightweight design.
