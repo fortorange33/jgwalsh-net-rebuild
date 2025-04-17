@@ -53,45 +53,51 @@
 
 <body class="font-sans bg-gray-100 text-gray-900 min-h-screen flex flex-col">
   <!-- Header -->
-  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <!-- Branding -->
-      <div class="leading-tight">
-        <h1 class="text-xl font-serif font-bold">James Gregory Walsh</h1>
-        <p class="text-blue-100 text-sm">Professional Portfolio</p>
-      </div>
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 
-      <!-- Mobile Toggle Button (Hamburger) -->
-      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      <a href="/" class="flex items-center">
+        <h1 class="text-xl font-serif font-bold mr-2">James Gregory Walsh</h1>
+        <p class="text-blue-100 text-sm">Portfolio</p>
+      </a>
+
+      <button id="mobile-menu-button" class="sm:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-2" aria-label="Menu">
+        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
         </svg>
       </button>
 
-      <!-- Navigation -->
-      <nav>
-        <ul id="mobileMenu" class="sm:flex hidden flex-col sm:flex-row gap-6 text-sm font-medium bg-blue-900 sm:bg-transparent sm:static absolute top-16 left-0 w-full sm:w-auto">
-          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
-          <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
-          <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
-          <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
-          <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+      <nav class="hidden sm:flex">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-200">About</a></li>
+          <li><a href="experience.html" class="hover:text-blue-200">Experience</a></li>
+          <li><a href="projects.html" class="hover:text-blue-200">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-900 bg-opacity-95 flex-col justify-center items-center space-y-6 sm:hidden hidden">
+        <ul class="flex flex-col items-center space-y-4">
+          <li><a href="index.html" class="text-white text-xl hover:text-blue-200">Home</a></li>
+          <li><a href="about.html" class="text-white text-xl hover:text-blue-200">About</a></li>
+          <li><a href="experience.html" class="text-white text-xl hover:text-blue-200">Experience</a></li>
+          <li><a href="projects.html" class="text-white text-xl hover:text-blue-200">Projects</a></li>
+          <li><a href="contact.html" class="text-white text-xl hover:text-blue-200">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Toggle Menu Script -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleBtn = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-      toggleBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
-      });
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
+  });
   </script>
 
   <!-- Main Content -->
