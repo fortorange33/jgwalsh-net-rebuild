@@ -56,49 +56,39 @@
   <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 
-      <a href="/" class="flex items-center">
+      <a href="index.html" class="flex items-center"> <!-- Changed href to index.html -->
         <h1 class="text-xl font-serif font-bold mr-2">James Gregory Walsh</h1>
         <p class="text-blue-100 text-sm">Portfolio</p>
       </a>
 
       <button id="mobile-menu-button" class="sm:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-2" aria-label="Menu">
-        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
         </svg>
       </button>
 
       <nav class="hidden sm:flex">
         <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
-          <li><a href="about.html" class="hover:text-blue-200">About</a></li>
-          <li><a href="experience.html" class="hover:text-blue-200">Experience</a></li>
-          <li><a href="projects.html" class="hover:text-blue-200">Projects</a></li>
-          <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
+          <li><a href="index.html" class="hover:text-blue-200">Home</a></li> <!-- Changed href -->
+          <li><a href="about.html" class="hover:text-blue-200">About</a></li> <!-- Changed href -->
+          <li><a href="experience.html" class="hover:text-blue-200">Experience</a></li> <!-- Changed href -->
+          <li><a href="projects.html" class="hover:text-blue-200">Projects</a></li> <!-- Changed href -->
+          <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li> <!-- Changed href -->
         </ul>
       </nav>
 
-      <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-900 bg-opacity-95 flex-col justify-center items-center space-y-6 sm:hidden hidden">
+      <!-- Mobile Menu Overlay -->
+      <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-900 bg-opacity-95 flex flex-col justify-center items-center space-y-6 sm:hidden hidden">
         <ul class="flex flex-col items-center space-y-4">
-          <li><a href="index.html" class="text-white text-xl hover:text-blue-200">Home</a></li>
-          <li><a href="about.html" class="text-white text-xl hover:text-blue-200">About</a></li>
-          <li><a href="experience.html" class="text-white text-xl hover:text-blue-200">Experience</a></li>
-          <li><a href="projects.html" class="text-white text-xl hover:text-blue-200">Projects</a></li>
-          <li><a href="contact.html" class="text-white text-xl hover:text-blue-200">Contact</a></li>
+          <li><a href="index.html" class="text-white text-xl hover:text-blue-200">Home</a></li> <!-- Changed href -->
+          <li><a href="about.html" class="text-white text-xl hover:text-blue-200">About</a></li> <!-- Changed href -->
+          <li><a href="experience.html" class="text-white text-xl hover:text-blue-200">Experience</a></li> <!-- Changed href -->
+          <li><a href="projects.html" class="text-white text-xl hover:text-blue-200">Projects</a></li> <!-- Changed href -->
+          <li><a href="contact.html" class="text-white text-xl hover:text-blue-200">Contact</a></li> <!-- Changed href -->
         </ul>
       </nav>
     </div>
   </header>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  });
-  </script>
 
   <!-- Main Content -->
   <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
