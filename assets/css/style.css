@@ -17,6 +17,9 @@ body {
   padding: 2rem;
 }
 
+/* prevent content shift when body overflow is hidden */
+body.overflow-hidden { touch-action: none; }
+
 /* Media Query: reduce body padding on smaller devices */
 @media (max-width: 640px) {
   body {

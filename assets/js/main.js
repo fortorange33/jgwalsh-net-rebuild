@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+  const btn   = document.getElementById('mobile-menu-button');
+  const menu  = document.getElementById('mobile-menu');
 
-    if (menuButton && mobileMenu) { // Check if elements exist
-        menuButton.addEventListener('click', () => {
-            const expanded = mobileMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
-            document.body.classList.toggle('menu-open', !expanded);
-        });
-    }
+  if (!btn || !menu) return;
+
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('hidden') === false;      // hidden removed → open
+    btn.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('overflow-hidden', open);     // lock scroll
+  });
 });
