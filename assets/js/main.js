@@ -1,41 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ── MOBILE MENU TOGGLE ──────────────────────────────────────────
-  (() => {
-    const btn   = document.getElementById('mobile-menu-button');
-    const menu  = document.getElementById('mobile-menu');
-    if (!btn || !menu) return;
-
-    const open  = () => {
-      menu.classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
-      btn.setAttribute('aria-expanded', 'true');
-      btn.querySelector('.hamburger')?.classList.add('hidden');
-      btn.querySelector('.close')?.classList.remove('hidden');
-    };
-
-    const close = () => {
-      menu.classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-      btn.setAttribute('aria-expanded', 'false');
-      btn.querySelector('.hamburger')?.classList.remove('hidden');
-      btn.querySelector('.close')?.classList.add('hidden');
-    };
-
+  // Mobile menu
+  const btn  = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
     btn.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      expanded ? close() : open();
+      const isOpen = menu.classList.toggle('-translate-x-full');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      // swap icons
+      btn.querySelector('.hamburger').classList.toggle('hidden');
+      btn.querySelector('.close').classList.toggle('hidden');
     });
+  }
 
-    // close when a menu link is tapped
-    menu.querySelectorAll('a').forEach(a =>
-      a.addEventListener('click', close)
-    );
-
-    // close on ESC
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
-        close();
-      }
-    });
-  })();
+  // Highlight current link
+  const path = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.navlink').forEach(a => {
+    if (a.getAttribute('href').endsWith(path)) {
+      a.classList.add('border-b-2','border-teal-400');
+    }
+  });
 });

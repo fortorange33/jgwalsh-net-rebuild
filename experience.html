@@ -20,41 +20,46 @@
 </head>
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+  <!-- BEGIN HEADER (identical on every page) -->
+  <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow">
+    <!-- Brand / Logo -->
+    <a href="/index.html" class="flex items-center space-x-3">
+      <img src="assets/images/j-gregory-walsh.png" alt="J. Gregory Walsh logo" class="h-8 w-auto sm:h-10">
+      <span class="sr-only">Go home</span>
+    </a>
 
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="assets/images/j-gregory-walsh.png" alt="James Gregory Walsh" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto">
-      </a>
+    <!-- Desktop nav -->
+    <nav class="hidden lg:flex space-x-6 text-base font-semibold">
+      <a href="/index.html"        class="navlink">Home</a>
+      <a href="/about.html"        class="navlink">About</a>
+      <a href="/experience.html"   class="navlink">Experience</a>
+      <a href="/projects.html"     class="navlink">Projects</a>
+      <a href="/contact.html"      class="navlink">Contact</a>
+    </nav>
 
-      <button id="mobile-menu-button" class="sm:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-2" aria-label="Menu" aria-expanded="false">
-        <svg class="hamburger w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
-        </svg>
-        <svg class="close hidden w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-
-      <nav class="hidden sm:flex">
-        <ul class="flex space-x-6">
-          <li><a href="/index.html" class="hover:text-blue-200">Home</a></li>
-          <li><a href="/about.html" class="hover:text-blue-200">About</a></li>
-          <li><a href="/experience.html" class="hover:text-blue-200">Experience</a></li>
-          <li><a href="/projects.html" class="hover:text-blue-200">Projects</a></li>
-          <li><a href="/contact.html" class="hover:text-blue-200">Contact</a></li>
-        </ul>
-      </nav>
-
-      <nav id="mobile-menu" class="fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-6 text-white text-2xl font-semibold hidden z-50">
-        <a href="/index.html" class="hover:text-blue-300">Home</a>
-        <a href="/about.html" class="hover:text-blue-300">About</a>
-        <a href="/experience.html" class="hover:text-blue-300">Experience</a>
-        <a href="/projects.html" class="hover:text-blue-300">Projects</a>
-        <a href="/contact.html" class="hover:text-blue-300">Contact</a>
-      </nav>
-    </div>
+    <!-- Hamburger -->
+    <button id="mobile-menu-button"
+            class="lg:hidden text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+            aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path class="hamburger" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+        <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
   </header>
+
+  <!-- Mobile slide‑out -->
+  <nav id="mobile-menu"
+       class="fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold text-white z-40 transform -translate-x-full transition-transform duration-300 lg:hidden">
+    <a href="/index.html"        class="navlink">Home</a>
+    <a href="/about.html"        class="navlink">About</a>
+    <a href="/experience.html"   class="navlink">Experience</a>
+    <a href="/projects.html"     class="navlink">Projects</a>
+    <a href="/contact.html"      class="navlink">Contact</a>
+  </nav>
+  <!-- END HEADER -->
 
   <!-- Main -->
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">
