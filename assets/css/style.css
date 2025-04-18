@@ -156,7 +156,7 @@ button#mobile-menu-button:hover {
 #mobile-menu {
   background-color: rgb(30 58 138); /* same blue-900, 100% opaque */
   backface-visibility: hidden;
-  z-index: 50; /* Ensure it is above other elements */
+  z-index: 9999; /* ensure mobile overlay is always above everything */
 }
 
 /* Prevent background scroll when menu is open */
