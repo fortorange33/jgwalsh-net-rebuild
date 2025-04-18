@@ -72,9 +72,7 @@ header .header-content {
 }
 
 /* Branding / Title */
-header .branding {
-  /* If you have specific styles for your site branding, place them here */
-}
+/* Removed empty ruleset for header .branding */
 
 /* Desktop Nav */
 nav {
