@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuButton && mobileMenu) { // Check if elements exist
         menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
+            const expanded = mobileMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
+            document.body.classList.toggle('menu-open', !expanded);
         });
     }
 });
