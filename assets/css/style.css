@@ -7,13 +7,30 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Roboto", system-ui, -apple-system, sans-serif;
+html, body {
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+/* helpers --------------------------------------------------- */
+p {
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+ul li {
+  margin-bottom: .5rem;
+}
+
+a {
+  transition: color .15s ease;
+}
+
+a:hover {
+  color: #2dd4bf;
 }
 
 /* Base body styles */
 body {
-  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #1e293b; /* slate-800 */
   line-height: 1.6;
