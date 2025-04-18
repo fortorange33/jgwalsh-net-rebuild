@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact James Gregory Walsh – Professional portfolio in psychology, data, and public safety.">
+    <meta name="keywords" content="James Gregory Walsh, Contact, Portfolio, Psychology, Data, Public Safety">
     <title>Contact – James Gregory Walsh</title>
 
     <link rel="stylesheet" href="assets/css/tailwind.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
     <link rel="icon" type="image/png" href="assets/Favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/Favicons/favicon-16x16.png" sizes="180x180">
     <link rel="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
 </head>
@@ -28,9 +30,7 @@
             <a href="/projects.html" class="hover:text-blue-300 transition">Projects</a>
             <a href="/contact.html" class="hover:text-blue-300 transition">Contact</a>
         </nav>
-        <button id="mobile-menu-button" class="lg:hidden text-white text-3xl focus:outline-none" aria-label="Toggle Navigation">
-            ☰
-        </button>
+        <button id="mobile-menu-button" class="sm:hidden text-white text-3xl ml-auto focus:outline-none" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </header>
 
     <nav id="mobile-menu" class="hidden fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold text-white z-40 transform -translate-x-full transition-transform duration-300 lg:hidden">
@@ -112,11 +112,11 @@
 
     <footer class="bg-blue-900 text-white mt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
-            <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+            <p>© 2025 James Gregory Walsh. All rights reserved.</p>
             <nav class="flex flex-wrap gap-6">
                 <a href="mailto:jgwalsh@proton.me" class="hover:underline">Email</a>
-                <a href="privacy.html" class="hover:underline">Privacy&nbsp;Policy</a>
-                <a href="terms.html" class="hover:underline">Terms&nbsp;of&nbsp;Service</a>
+                <a href="/privacy.html" class="hover:underline">Privacy Policy</a>
+                <a href="/terms.html" class="hover:underline">Terms of Service</a>
             </nav>
         </div>
     </footer>
@@ -165,206 +165,6 @@
                 section.classList.remove('visible');  //remove visible, not reveal
                 observer.observe(section);
             });
-        });
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact James Gregory Walsh – Professional portfolio in psychology, data, and public safety.">
-    <title>Contact – James Gregory Walsh</title>
-
-    <link rel="stylesheet" href="assets/css/tailwind.min.css">
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Ensure this doesn't conflict -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/Favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/Favicons/favicon-16x16.png" sizes="180x180"> <!-- Size should likely be 16x16 -->
-    <link rel="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
-    <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
-        <a href="/" class="flex items-center">
-            <img src="assets/images/j-gregory-walsh.png" alt="James Gregory Walsh" class="h-10 w-auto">
-        </a>
-        <nav class="hidden lg:flex space-x-6 font-semibold">
-            <a href="/" class="hover:text-blue-300 transition">Home</a>
-            <a href="/about.html" class="hover:text-blue-300 transition">About</a>
-            <a href="/experience.html" class="hover:text-blue-300 transition">Experience</a>
-            <a href="/projects.html" class="hover:text-blue-300 transition">Projects</a>
-            <a href="/contact.html" class="text-blue-300 font-bold" aria-current="page">Contact</a> <!-- Indicate current page -->
-        </nav>
-        <button id="mobile-menu-button" class="lg:hidden text-white text-3xl focus:outline-none" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="mobile-menu">
-            ☰ <!-- Initial icon -->
-        </button>
-    </header>
-
-    <!-- Mobile Menu: Added transition, adjusted initial state -->
-    <nav id="mobile-menu" class="fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold text-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
-        <a href="/" class="navlink hover:text-blue-300">Home</a>
-        <a href="/about.html" class="navlink hover:text-blue-300">About</a>
-        <a href="/experience.html" class="navlink hover:text-blue-300">Experience</a>
-        <a href="/projects.html" class="navlink hover:text-blue-300">Projects</a>
-        <a href="/contact.html" class="navlink text-blue-300 font-bold" aria-current="page">Contact</a> <!-- Indicate current page -->
-    </nav>
-
-    <main class="flex-grow max-w-5xl mx-auto mt-8 sm:mt-12 px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-8 tracking-tight">Get in Touch</h2>
-
-        <!-- Added space-y-10 for stacking, md:space-y-0 to remove it when grid applies -->
-        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-12">
-            <!-- Column 1: Contact Details & Links -->
-            <div class="space-y-8"> <!-- Increased spacing between sections in this column -->
-                <div class="space-y-4 text-base text-gray-800"> <!-- Slightly larger base text -->
-                    <h3 class="text-xl font-semibold text-gray-900">Contact Details</h3> <!-- Darker heading -->
-                    <p>
-                        <strong>Email:</strong>
-                        <a href="mailto:jgwalsh@proton.me" class="text-blue-600 hover:underline">jgwalsh@proton.me</a>
-                    </p>
-                    <p>
-                        <strong>Phone:</strong>
-                        <a href="tel:+16173833745" class="text-blue-600 hover:underline">(617) 383-3745</a>
-                    </p>
-                    <p>
-                        <strong>Location:</strong>
-                        Albany, NY &amp; Boston, MA
-                    </p>
-                </div>
-
-                <div class="space-y-3"> <!-- Adjusted spacing -->
-                    <h3 class="text-xl font-semibold text-gray-900">Digital Business Card</h3>
-                    <p class="text-base text-gray-700">Access my digital contact card:</p> <!-- Adjusted text size/color -->
-                    <a href="/card" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-green-700 text-white text-base font-medium rounded hover:bg-green-600 transition shadow-sm">
-                        View Digital Card
-                    </a>
-                </div>
-
-                <div class="space-y-4">
-                    <h4 class="text-xl font-semibold text-gray-900">Connect with Me</h4>
-                     <!-- Adjusted icon size, gap, and alignment for better responsiveness -->
-                    <div class="flex flex-wrap items-center gap-4 sm:gap-5">
-                        <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener noreferrer" class="transition hover:opacity-75" title="LinkedIn Profile" aria-label="LinkedIn">
-                            <img src="assets/images/LI-In-Bug.png" alt="LinkedIn" class="h-9 sm:h-10 w-auto object-contain">
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                        <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank" rel="noopener noreferrer" class="transition hover:opacity-75" title="Siena Alumni Network" aria-label="Siena Alumni Network">
-                            <img src="assets/images/siena-logo.png" alt="Siena Alumni Network" class="h-9 sm:h-10 w-auto object-contain">
-                            <span class="sr-only">Siena Alumni Network</span>
-                        </a>
-                        <a href="mailto:jgwalsh@bu.edu" target="_blank" rel="noopener noreferrer" class="transition hover:opacity-75" title="Send Email via BU Email" aria-label="BU Email">
-                            <img src="assets/images/bu-logo.png" alt="BU Email" class="h-9 sm:h-10 w-auto object-contain">
-                            <span class="sr-only">Boston University Email</span>
-                        </a>
-                    </div>
-                    <p class="text-base text-gray-700 mt-3"> <!-- Adjusted text size/color/margin -->
-                        Connect via my professional profiles.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Column 2: Contact Form -->
-            <div class="space-y-6"> <!-- Adjusted spacing -->
-                <h3 class="text-xl font-semibold text-gray-900">Send a Message</h3>
-                <form action="https://formspree.io/f/mwplwzlg" method="POST" class="space-y-5">
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="you@example.com" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here…" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea> <!-- Increased rows slightly -->
-                    </div>
-                    <button type="submit" class="inline-flex items-center justify-center py-2.5 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-blue-900 text-white mt-auto"> <!-- Use mt-auto on footer if main has flex-grow -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-sm">
-            <p class="text-center sm:text-left">&copy; 2025 James Gregory Walsh. All rights reserved.</p>
-            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                <a href="mailto:jgwalsh@proton.me" class="hover:underline">Email</a>
-                <a href="privacy.html" class="hover:underline">Privacy&nbsp;Policy</a>
-                <a href="terms.html" class="hover:underline">Terms&nbsp;of&nbsp;Service</a>
-            </nav>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            // Correctly select links within the mobile menu
-            const mobileNavLinks = mobileMenu.querySelectorAll('.navlink'); // Corrected selector
-
-            function toggleMobileMenu() {
-                const isOpen = mobileMenu.classList.contains('translate-x-0');
-
-                // Toggle transform classes for slide animation
-                mobileMenu.classList.toggle('-translate-x-full');
-                mobileMenu.classList.toggle('translate-x-0');
-
-                // Update ARIA attribute
-                mobileMenuButton.setAttribute('aria-expanded', !isOpen);
-
-                // Change button text/icon (optional but good UX)
-                mobileMenuButton.textContent = isOpen ? '☰' : '✕'; // Toggle between hamburger and close icon
-            }
-
-            if (mobileMenuButton && mobileMenu) {
-                // Toggle menu on button click
-                mobileMenuButton.addEventListener('click', toggleMobileMenu);
-
-                // Close menu when a nav link is clicked
-                mobileNavLinks.forEach(link => { // Use correct variable name
-                    link.addEventListener('click', () => {
-                        // Only close if the menu is currently open
-                        if (mobileMenu.classList.contains('translate-x-0')) {
-                            toggleMobileMenu();
-                        }
-                    });
-                });
-
-                // Close menu when clicking outside of it (optional but good UX)
-                document.addEventListener('click', (event) => {
-                    // Check if the menu is open and the click was outside the menu and the button
-                    const isClickInsideMenu = mobileMenu.contains(event.target);
-                    const isClickOnButton = mobileMenuButton.contains(event.target);
-                    const isOpen = mobileMenu.classList.contains('translate-x-0');
-
-                    if (isOpen && !isClickInsideMenu && !isClickOnButton) {
-                        toggleMobileMenu();
-                    }
-                });
-            }
-
-            // --- Intersection Observer Logic (Keep if used elsewhere, otherwise remove) ---
-            const reveals = document.querySelectorAll('.reveal'); // Make sure you have elements with class="reveal" if you use this
-            if (reveals.length > 0) {
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                        } else {
-                             // Optional: remove class when scrolling out of view
-                             // entry.target.classList.remove('visible');
-                        }
-                    });
-                }, { threshold: 0.1 });
-
-                reveals.forEach(section => {
-                    // section.classList.remove('visible'); // Ensure it starts hidden if needed
-                    observer.observe(section);
-                });
-            }
         });
     </script>
 </body>
