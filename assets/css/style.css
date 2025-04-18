@@ -247,3 +247,7 @@ body.dark-mode footer {
   color: #cbd5e1;
   border-top-color: #334155;
 }
+
+/* simple fade‑up when .visible is toggled by JS */
+.reveal   { opacity:0; transform:translateY(24px); transition:opacity .5s ease,transform .5s ease; }
+.visible  { opacity:1; transform:none; }
