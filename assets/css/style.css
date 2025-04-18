@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Roboto", system-ui, -apple-system, sans-serif;
+}
+
 /* Base body styles */
 body {
   font-family: 'Inter', sans-serif;
@@ -28,8 +32,11 @@ body.overflow-hidden { touch-action: none; }
 }
 
 /* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* headings default bold */
+}
+
 h1, h2, h3 {
-  font-weight: 700;
   color: #0f172a; /* slate-900 */
   margin-bottom: 1rem;
 }
