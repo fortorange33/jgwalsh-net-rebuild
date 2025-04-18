@@ -102,16 +102,16 @@ nav a:hover {
 }
 
 /* Mobile Toggle Button */
-button#menuToggle {
-  display: none; 
+button#mobile-menu-button {
+  display: none;
   background: none;
   border: none;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   color: #ffffff;
   cursor: pointer;
   transition: color 0.2s ease;
 }
-button#menuToggle:hover {
+button#mobile-menu-button:hover {
   color: #cbd5e1;
 }
 
@@ -129,7 +129,7 @@ button#menuToggle:hover {
     display: flex; /* toggled open class, e.g., .show */
   }
 
-  button#menuToggle {
+  button#mobile-menu-button {
     display: block; /* show the hamburger icon */
   }
 }
