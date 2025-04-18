@@ -15,6 +15,7 @@
 
     <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
     <link rel="icon" type="image/png" href="assets/Favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/Favicons/favicon-16x16.png" sizes="16x16">
     <link rel="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
 </head>
@@ -28,12 +29,12 @@
             <a href="/about.html" class="hover:text-blue-300 transition">About</a>
             <a href="/experience.html" class="hover:text-blue-300 transition">Experience</a>
             <a href="/projects.html" class="hover:text-blue-300 transition">Projects</a>
-            <a href="/contact.html" class="hover:text-blue-300 transition">Contact</a>
+            <a href="/contact.html" class="text-blue-300 font-bold" aria-current="page">Contact</a>
         </nav>
         <button id="mobile-menu-button" class="sm:hidden text-white text-3xl ml-auto focus:outline-none" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </header>
 
-    <nav id="mobile-menu" class="hidden fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold text-white z-40 transform -translate-x-full transition-transform duration-300 lg:hidden">
+    <nav id="mobile-menu" class="fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold text-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
         <a href="/" class="navlink">Home</a>
         <a href="/about.html" class="navlink">About</a>
         <a href="/experience.html" class="navlink">Experience</a>
@@ -43,7 +44,7 @@
     <main class="max-w-5xl mx-auto mt-8 sm:mt-12 px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-8 tracking-tight">Get in Touch</h2>
 
-        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 md:grid md:grid-cols-2 md:gap-12">
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-12">
             <div class="space-y-6">
                 <div class="space-y-4 text-sm text-gray-800">
                     <h3 class="text-xl font-semibold text-gray-800">Contact Details</h3>
@@ -110,7 +111,7 @@
         </div>
     </main>
 
-    <footer class="bg-blue-900 text-white mt-24">
+    <footer class="bg-blue-900 text-white mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
             <p>© 2025 James Gregory Walsh. All rights reserved.</p>
             <nav class="flex flex-wrap gap-6">
@@ -125,46 +126,51 @@
         document.addEventListener('DOMContentLoaded', () => {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
-            const hamburgerIcon = document.querySelector('.hamburger');
-            const closeIcon = document.querySelector('.close');
+            const mobileNavLinks = mobileMenu.querySelectorAll('.navlink');
 
             function toggleMobileMenu() {
-                mobileMenu.classList.toggle('hidden');
-                const isHidden = mobileMenu.classList.contains('hidden');
-                mobileMenuButton.setAttribute('aria-expanded', !isHidden);
-
-                hamburgerIcon.classList.toggle('hidden', !isHidden);
-                closeIcon.classList.toggle('hidden', isHidden);
+                const isOpen = mobileMenu.classList.contains('translate-x-0');
+                mobileMenu.classList.toggle('-translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+                mobileMenuButton.setAttribute('aria-expanded', !isOpen);
+                mobileMenuButton.textContent = isOpen ? '☰' : '✕';
             }
 
             if (mobileMenuButton && mobileMenu) {
                 mobileMenuButton.addEventListener('click', toggleMobileMenu);
-                mobileNavLink.forEach(link => {
-                    link.addEventListener('click', toggleMobileMenu);
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (mobileMenu.classList.contains('translate-x-0')) {
+                            toggleMobileMenu();
+                        }
+                    });
                 });
 
                 document.addEventListener('click', (event) => {
-                    if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+                    const isClickInsideMenu = mobileMenu.contains(event.target);
+                    const isClickOnButton = mobileMenuButton.contains(event.target);
+                    const isOpen = mobileMenu.classList.contains('translate-x-0');
+
+                    if (isOpen && !isClickInsideMenu && !isClickOnButton) {
                         toggleMobileMenu();
                     }
                 });
             }
 
             const reveals = document.querySelectorAll('.reveal');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    } else {
-                        entry.target.classList.remove('visible'); // remove the class when it is not intersecting
-                    }
+            if (reveals.length > 0) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                reveals.forEach(section => {
+                    observer.observe(section);
                 });
-            }, { threshold: 0.1 });
-            reveals.forEach(section => {
-                section.classList.remove('visible');  //remove visible, not reveal
-                observer.observe(section);
-            });
+            }
         });
     </script>
 </body>
