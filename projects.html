@@ -13,7 +13,7 @@
 </head>
 
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
-  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Branding -->
       <div class="leading-tight">
@@ -38,19 +38,6 @@
       </nav>
     </div>
   </header>
-
-  <!-- Toggle Menu Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleBtn = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
-
-      toggleBtn.addEventListener('click', () => {
-        // Toggle the "hidden" class each time the user clicks
-        mobileMenu.classList.toggle('hidden');
-      });
-    });
-  </script>
 
   <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
     <section>
@@ -94,5 +81,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
