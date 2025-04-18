@@ -124,6 +124,17 @@ button#menuToggle:hover {
   }
 }
 
+/* Mobile overlay menu — fully opaque background */
+#mobile-menu {
+  background-color: rgb(30 58 138); /* same blue-900, 100% opaque */
+  backface-visibility: hidden;
+}
+
+/* Prevent background scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
 /* Hero Section */
 .hero {
   background-color: #f8fafc;
