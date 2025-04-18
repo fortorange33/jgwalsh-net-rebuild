@@ -116,13 +116,14 @@
   <!-- Toggle Menu Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const toggleBtn = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
-
-      toggleBtn.addEventListener('click', () => {
-        // Toggle the "hidden" class each time the user clicks
-        mobileMenu.classList.toggle('hidden');
-      });
+      const toggle = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          document.body.classList.toggle('menu-open');
+        });
+      }
     });
   </script>
   <script src="assets/js/main.js" defer></script>
