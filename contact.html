@@ -62,8 +62,18 @@
                 <p><strong>Email:</strong> <a href="mailto:jgwalsh@proton.me">jgwalsh@proton.me</a></p>
                 <p><strong>Phone:</strong> (617) 383-3745</p>
                 <p><strong>Location:</strong> Albany, NY & Boston, MA</p>
-                <p><a href="/assets/resume.pdf" target="_blank">View Résumé (PDF)</a></p>
-                <p><a href="/digital-card" target="_blank">View Digital Card</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jgwalsh" target="_blank">
+                        <img src="/assets/images/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.siena.edu/alumni" target="_blank">
+                        <img src="/assets/images/siena-alum.png" alt="Siena Alum" class="social-icon">
+                    </a>
+                    <a href="https://www.bu.edu" target="_blank">
+                        <img src="/assets/images/bu.png" alt="Boston University" class="social-icon">
+                    </a>
+                </div>
+                <p><a href="/digital-card" target="_blank" class="button-link">View Digital Business Card</a></p>
             </div>
         </div>
     </main>
@@ -140,6 +150,32 @@
 
         .contact-info a:hover {
             text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
         }
 
         /* Responsive Layout */
