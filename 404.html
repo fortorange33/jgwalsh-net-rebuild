@@ -11,31 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans">
-  <!-- BEGIN STANDARD HEADER -->
+  <!-- BEGIN MOBILE HEADER -->
   <header class="bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
     <div class="leading-tight">
       <h1 class="text-xl sm:text-2xl font-serif font-bold tracking-tight">James Gregory Walsh</h1>
       <p class="text-sm text-blue-100">Professional Portfolio</p>
     </div>
 
-    <!-- Hamburger -->
+    <!-- single hamburger -->
     <button id="mobile-menu-button"
-            class="sm:hidden text-white text-2xl ml-auto focus:outline-none"
+            class="sm:hidden text-white text-3xl ml-auto focus:outline-none"
             aria-label="Toggle menu"
             aria-expanded="false"
             aria-controls="mobile-menu">☰</button>
   </header>
 
-  <!-- Mobile dropdown -->
+  <!-- full‑screen overlay menu -->
   <nav id="mobile-menu"
-       class="hidden sm:hidden fixed top-16 left-0 right-0 bg-blue-900 text-white px-4 py-6 flex flex-col gap-4 text-sm font-medium z-50 shadow-md">
+       class="hidden fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center gap-8 text-white text-2xl font-semibold z-50">
     <a href="index.html"      class="hover:text-blue-300">Home</a>
     <a href="about.html"      class="hover:text-blue-300">About</a>
     <a href="experience.html" class="hover:text-blue-300">Experience</a>
     <a href="projects.html"   class="hover:text-blue-300">Projects</a>
     <a href="contact.html"    class="hover:text-blue-300">Contact</a>
   </nav>
-  <!-- END STANDARD HEADER -->
+  <!-- END MOBILE HEADER -->
 
   <main class="container text-center">
     <section class="reveal">
