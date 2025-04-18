@@ -39,7 +39,10 @@ body {
 }
 
 /* prevent content shift when body overflow is hidden */
-body.overflow-hidden { touch-action: none; }
+body.overflow-hidden { 
+  touch-action: none; 
+  overflow: hidden;
+}
 
 /* Media Query: reduce body padding on smaller devices */
 @media (max-width: 640px) {
@@ -153,6 +156,7 @@ button#mobile-menu-button:hover {
 #mobile-menu {
   background-color: rgb(30 58 138); /* same blue-900, 100% opaque */
   backface-visibility: hidden;
+  z-index: 50; /* Ensure it is above other elements */
 }
 
 /* Prevent background scroll when menu is open */
