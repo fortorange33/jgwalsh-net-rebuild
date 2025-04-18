@@ -149,10 +149,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const toggleBtn = document.getElementById('menuToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
+            const toggleBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
             toggleBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
+                const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+                toggleBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('-translate-x-full');
             });
         });
     </script>
