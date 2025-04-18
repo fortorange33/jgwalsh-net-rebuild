@@ -11,40 +11,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans">
-  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <!-- Branding -->
-      <div class="branding">
-        <h1 class="text-xl font-serif font-bold leading-tight">James Gregory Walsh</h1>
-        <p class="text-blue-100 text-sm">Professional Portfolio</p>
-      </div>
-
-      <!-- Mobile menu toggle -->
-      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
-        ☰
-      </button>
-
-      <!-- Desktop nav -->
-      <nav class="hidden sm:flex gap-6 text-sm font-medium font-sans ml-6">
-        <a href="index.html" class="hover:text-blue-300 transition">Home</a>
-        <a href="about.html" class="hover:text-blue-300 transition">About</a>
-        <a href="experience.html" class="hover:text-blue-300 transition">Experience</a>
-        <a href="projects.html" class="hover:text-blue-300 transition">Projects</a>
-        <a href="contact.html" class="hover:text-blue-300 transition">Contact</a>
-      </nav>
+  <!-- BEGIN STANDARD HEADER -->
+  <header class="bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+    <div class="leading-tight">
+      <h1 class="text-xl sm:text-2xl font-serif font-bold tracking-tight">James Gregory Walsh</h1>
+      <p class="text-sm text-blue-100">Professional Portfolio</p>
     </div>
 
-    <!-- Mobile nav -->
-    <nav id="mobileMenu" class="sm:hidden hidden px-4 pb-4 text-sm font-medium font-sans">
-      <ul class="space-y-2 text-center">
-        <li><a href="index.html" class="block hover:text-blue-300">Home</a></li>
-        <li><a href="about.html" class="block hover:text-blue-300">About</a></li>
-        <li><a href="experience.html" class="block hover:text-blue-300">Experience</a></li>
-        <li><a href="projects.html" class="block hover:text-blue-300">Projects</a></li>
-        <li><a href="contact.html" class="block hover:text-blue-300">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Hamburger -->
+    <button id="mobile-menu-button"
+            class="sm:hidden text-white text-2xl ml-auto focus:outline-none"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">☰</button>
   </header>
+
+  <!-- Mobile dropdown -->
+  <nav id="mobile-menu"
+       class="hidden sm:hidden fixed top-16 left-0 right-0 bg-blue-900 text-white px-4 py-6 flex flex-col gap-4 text-sm font-medium z-50 shadow-md">
+    <a href="index.html"      class="hover:text-blue-300">Home</a>
+    <a href="about.html"      class="hover:text-blue-300">About</a>
+    <a href="experience.html" class="hover:text-blue-300">Experience</a>
+    <a href="projects.html"   class="hover:text-blue-300">Projects</a>
+    <a href="contact.html"    class="hover:text-blue-300">Contact</a>
+  </nav>
+  <!-- END STANDARD HEADER -->
+
   <main class="container text-center">
     <section class="reveal">
       <h1 class="error-title">404 – Page Not Found</h1>
