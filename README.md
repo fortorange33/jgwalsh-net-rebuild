@@ -1,6 +1,7 @@
 # James Gregory Walsh Portfolio Website Rebuild
 
-[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-live-success?logo=cloudflare&style=flat-square)](https://jgwalsh.net)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-live-success?logo=Cloudflare&logoColor=white&style=flat-square)](https://jgwalsh.net)
+
 [![GitHub Repository](https://img.shields.io/badge/Source-GitHub-black?logo=github&style=flat-square)](https://github.com/fortorange33/jgwalsh-net-rebuild)
 
 This repository contains the source code for the professional portfolio of **James Gregory Walsh**. The website highlights his work in applied psychology, law enforcement readiness, civic technology, and public safety innovation.
