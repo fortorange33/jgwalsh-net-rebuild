@@ -1,6 +1,6 @@
 # James Gregory Walsh Portfolio Website Rebuild
 
-[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-live-success?logo=Cloudflare&logoColor=white&style=flat-square)](https://jgwalsh.net)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-live-success?logo=cloudflare&logoColor=f38020&style=flat-square)](https://jgwalsh.net)
 
 [![GitHub Repository](https://img.shields.io/badge/Source-GitHub-black?logo=github&style=flat-square)](https://github.com/fortorange33/jgwalsh-net-rebuild)
 
