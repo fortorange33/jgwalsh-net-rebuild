@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <link rel="stylesheet" href="assets/css/tailwind.min.css">
+</head>
+<body>
+  <header class="w-full bg-[#1C2B36] text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <a href="/index.html" class="text-xl font-bold">James Gregory Walsh</a>
+    <nav class="hidden lg:flex space-x-6">
+      <a href="/index.html" class="hover:text-[#F39200]">Home</a>
+      <a href="/about.html" class="hover:text-[#F39200]">About</a>
+      <a href="/experience.html" class="hover:text-[#F39200]">Experience</a>
+      <a href="/projects.html" class="hover:text-[#F39200]">Projects</a>
+      <a href="/contact.html" class="hover:text-[#F39200]">Contact</a>
+    </nav>
+    <button id="mobile-menu-button" class="lg:hidden text-white text-3xl focus:outline-none" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+  </header>
+
+  <nav id="mobile-menu" class="hidden fixed inset-0 bg-[#1C2B36] flex flex-col items-center justify-center gap-6 text-white text-xl font-semibold z-40">
+    <a href="/index.html" class="hover:text-[#F39200]">Home</a>
+    <a href="/about.html" class="hover:text-[#F39200]">About</a>
+    <a href="/experience.html" class="hover:text-[#F39200]">Experience</a>
+    <a href="/projects.html" class="hover:text-[#F39200]">Projects</a>
+    <a href="/contact.html" class="hover:text-[#F39200]">Contact</a>
+  </nav>
+</body>
+</html>
