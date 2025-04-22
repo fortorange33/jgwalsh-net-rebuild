@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
   const siteHeader = document.getElementById('site-header');
 
   if (siteHeader) {
