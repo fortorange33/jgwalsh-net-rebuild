@@ -18,20 +18,20 @@
 </head>
 
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
-  <!-- BEGIN HEADER -->
+  <!-- Header -->
   <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/images/j-gregory-walsh.png" alt="James Gregory Walsh" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto">
-    </a>
-
-    <nav class="hidden sm:flex space-x-6 text-sm font-medium">
-      <a href="/index.html" class="hover:text-blue-300 transition">Home</a>
-      <a href="/about.html" class="hover:text-blue-300 transition">About</a>
-      <a href="/experience.html" class="hover:text-blue-300 transition">Experience</a>
-      <a href="/projects.html" class="hover:text-blue-300 transition">Projects</a>
-      <a href="/contact.html" class="hover:text-blue-300 transition">Contact</a>
-    </nav>
-
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="/assets/images/jgregory_walsh_logo_2.png" alt="James Gregory Walsh Logo" class="h-10 w-auto">
+      </a>
+      <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-2" aria-label="Toggle Menu">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+        </svg>
+      </button>
+      <nav class="hidden md:flex space-x-6 text-base font-semibold">
+        <a href="/index.html" class="hover:text-blue-200">Home</a>
+        <a href="/about.html" class="hover:text-blue-200">About</a>
     <button id="mobile-menu-button" class="sm:hidden text-white text-3xl ml-auto focus:outline-none" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">☰</button>
   </header>
 
