@@ -40,19 +40,6 @@
       <a href="/contact.html" class="text-white text-xl hover:text-blue-200">Contact</a>
     </nav>
   </header>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const btn = document.getElementById('mobile-menu-button');
-      const menu = document.getElementById('mobile-menu');
-      if (btn && menu) {
-        btn.addEventListener('click', function() {
-          const isHidden = menu.classList.contains('hidden');
-          menu.classList.toggle('hidden');
-          btn.setAttribute('aria-expanded', String(!isHidden));
-        });
-      }
-    });
-  </script>
 
   <!-- Main -->
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">

@@ -75,36 +75,19 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const btn = document.getElementById('mobile-menu-button');
-      const menu = document.getElementById('mobile-menu');
-      if (btn && menu) {
-        btn.addEventListener('click', function() {
-          const isHidden = menu.classList.contains('hidden');
-          menu.classList.toggle('hidden');
-          btn.setAttribute('aria-expanded', String(!isHidden));
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+          }
         });
-      }
-    });
+      }, { threshold: 0.1 });
 
-    const toggle = document.getElementById('darkToggle');
-    if (toggle) {
-      toggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
+      reveals.forEach(section => {
+        section.classList.remove('reveal');
+        observer.observe(section);
       });
-    }
-
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    reveals.forEach(section => {
-      section.classList.remove('reveal');
-      observer.observe(section);
     });
   </script>
   <script src="assets/js/main.js" defer></script>

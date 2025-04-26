@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.setAttribute('aria-expanded', String(!open));
       btn.textContent = open ? '☰' : '✕';
     });
+    // Keyboard accessibility: toggle on Enter/Space
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        btn.click();
+      }
+    });
     links.forEach(l => l.addEventListener('click', close));
     document.addEventListener('click', e => { if (!menu.contains(e.target) && !btn.contains(e.target)) close(); });
   }

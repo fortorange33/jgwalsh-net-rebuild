@@ -135,19 +135,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const btn = document.getElementById('mobile-menu-button');
-      const menu = document.getElementById('mobile-menu');
-      if (btn && menu) {
-        btn.addEventListener('click', function() {
-          const isHidden = menu.classList.contains('hidden');
-          menu.classList.toggle('hidden');
-          btn.setAttribute('aria-expanded', String(!isHidden));
-        });
-      }
-    });
-  </script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
