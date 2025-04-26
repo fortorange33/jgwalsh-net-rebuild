@@ -71,97 +71,44 @@ h3 {
   font-size: 1.25rem;
 }
 
-/* Navigation (Header) */
+/* HEADER & NAVIGATION (Tailwind standardization) */
 header {
-  background-color: #1e40af; /* Blue-900 or your preferred header color */
-  color: #ffffff;
-  position: sticky;
-  top: 0;
-  z-index: 50; /* Ensure it stays on top when scrolling */
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-/* Container for nav content */
-header .header-content {
-  max-width: 1200px;  /* Adjust if needed */
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Branding / Title */
-/* Removed empty ruleset for header .branding */
-
-/* Desktop Nav */
-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem; 
-}
-
-/* The UL is your main menu container */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem; /* spacing between nav items */
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff; /* White text for header nav */
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-nav a:hover {
-  color: #cbd5e1; /* Slightly lighter on hover */
-}
-
-/* Mobile Toggle Button */
-button#mobile-menu-button {
-  display: none;
   background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #ffffff;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-button#mobile-menu-button:hover {
-  color: #cbd5e1;
+  color: inherit;
+  position: static;
+  box-shadow: none;
+  z-index: auto;
 }
 
-/* Hide your main UL on small devices if you’re using a toggle-based approach */
-@media (max-width: 640px) {
-  nav ul {
-    display: none; /* hidden by default on small screens */
-    flex-direction: column; /* stack items vertically */
-    gap: 1rem;
-    background-color: #1e40af; /* match your header color */
-    padding: 1rem;
-  }
-  
-  nav ul.show {
-    display: flex; /* toggled open class, e.g., .show */
-  }
-
-  button#mobile-menu-button {
-    display: block; /* show the hamburger icon */
-  }
+header .header-content, nav ul, nav a, button#mobile-menu-button {
+  all: unset;
 }
 
-/* Mobile overlay menu — fully opaque background */
+/* Mobile Menu (Tailwind transition) */
 #mobile-menu {
-  background-color: rgb(30 58 138); /* same blue-900, 100% opaque */
-  backface-visibility: hidden;
-  z-index: 9999; /* ensure mobile overlay is always above everything */
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s cubic-bezier(0.4,0,0.2,1);
+  transform: translateY(-16px) scaleY(0.98);
+  opacity: 0;
+  pointer-events: none;
+}
+#mobile-menu.open {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
 }
 
-/* Prevent background scroll when menu is open */
-body.menu-open {
-  overflow: hidden;
+/* Hide on desktop, show on mobile */
+@media (min-width: 768px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+/* Hamburger button focus style */
+#mobile-menu-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #2563eb;
 }
 
 /* Hero Section */
@@ -211,13 +158,71 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* Footer standardization */
 footer {
+  background: none;
+  color: inherit;
+  text-align: left;
+  padding: 0;
+  border: none;
+}
+
+/* Social icons container */
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer-social {
+    justify-content: flex-start;
+  }
+}
+
+/* Social icon images */
+.footer-social img {
+  height: 1.5rem;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright text */
+.footer-copyright {
+  font-size: 0.75rem;
   text-align: center;
-  font-size: 0.875rem;
-  color: #64748b;
-  padding: 2rem 0;
-  border-top: 1px solid #e2e8f0;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer-copyright {
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+/* Footer inner container */
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer-inner {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* Dark Mode */

@@ -12,18 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(html => {
         siteHeader.innerHTML = html;
-
-        // Reinitialize mobile menu toggle functionality
-        const toggleButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        if (toggleButton && mobileMenu) {
-          toggleButton.addEventListener('click', () => {
-            const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-            toggleButton.setAttribute('aria-expanded', !isExpanded);
-            mobileMenu.classList.toggle('hidden');
-          });
-        }
       })
       .catch(error => {
         console.error('Error loading header:', error);
