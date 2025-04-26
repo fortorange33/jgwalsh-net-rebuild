@@ -122,40 +122,30 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
-      <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
-      <nav class="flex flex-wrap gap-6">
-        <a href="mailto:jgwalsh@proton.me" class="hover:underline">Email</a>
-        <a href="privacy.html" class="hover:underline">Privacy&nbsp;Policy</a>
-        <a href="terms.html" class="hover:underline">Terms&nbsp;of&nbsp;Service</a>
-      </nav>
+  <footer class="bg-blue-900 text-white mt-auto">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <p class="text-sm">&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+      <div class="flex flex-wrap gap-6 justify-center md:justify-start items-center">
+        <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
+          <img src="/assets/images/ocid-logo.png" alt="ORCID Profile" class="h-8 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+        <a href="https://www.linkedin.com/in/jgregorywalsh/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="/assets/images/LI-In-Bug.png" alt="LinkedIn Profile" class="h-8 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+        <a href="https://www.facebook.com/jgregwalsh/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="/assets/images/facebook_logo.png" alt="Facebook Profile" class="h-8 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+        <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="/assets/images/github_logo_white.png" alt="GitHub Profile" class="h-8 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+        <a href="https://x.com/jgregorywalsh" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <img src="/assets/images/logo-black.png" alt="X (Twitter) Profile" class="h-8 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+      </div>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="assets/js/main.js" defer></script>
-
-  <!-- 
-    Footer Component for jgwalsh.net
-
-    Purpose:
-    - Displays social media icons linking to ORCID, LinkedIn, Facebook, GitHub, and X (Twitter)
-    - Provides copyright notice
-    - Ensures responsive, accessible layout across mobile, tablet, and desktop devices
-    - Matches site's Tailwind CSS design system for consistent theming
-
-    Features:
-    - Flexbox layout: stacks vertically on mobile, horizontally on larger screens
-    - Hover animations: icons gently scale up for interactive feedback
-    - Accessibility: aria-labels for screen reader support
-    - Images sourced from /assets/images/ directory
-    - External links open in new tabs
-
-    Placement:
-    - Insert just above the closing </body> tag on every HTML page (index.html, about.html, experience.html, projects.html, contact.html)
-
-    Last Updated: April 24, 2025
-  -->
 </body>
 </html>
