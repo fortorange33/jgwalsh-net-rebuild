@@ -17,30 +17,36 @@
 <body class="font-sans">
   <!-- BEGIN HEADER -->
   <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/images/j-gregory-walsh.png" alt="James Gregory Walsh" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto">
-    </a>
-
-    <nav class="hidden sm:flex space-x-6 text-sm font-medium">
-      <a href="/index.html" class="hover:text-blue-300 transition">Home</a>
-      <a href="/about.html" class="hover:text-blue-300 transition">About</a>
-      <a href="/experience.html" class="hover:text-blue-300 transition">Experience</a>
-      <a href="/projects.html" class="hover:text-blue-300 transition">Projects</a>
-      <a href="/contact.html" class="hover:text-blue-300 transition">Contact</a>
-    </nav>
-
-    <button id="mobile-menu-button" class="sm:hidden text-white text-3xl ml-auto focus:outline-none" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center">
+        <img src="/assets/images/jgregory_walsh_logo_2.png" alt="J. Gregory Walsh Logo" class="h-10 w-auto object-contain">
+      </a>
+      <button id="mobile-menu-button" class="sm:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-2" aria-label="Menu">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+        </svg>
+      </button>
+      <nav class="hidden sm:flex">
+        <ul class="flex space-x-6">
+          <li><a href="/index.html" class="hover:text-blue-200">Home</a></li>
+          <li><a href="/about.html" class="hover:text-blue-200">About</a></li>
+          <li><a href="/experience.html" class="hover:text-blue-200">Experience</a></li>
+          <li><a href="/projects.html" class="hover:text-blue-200">Projects</a></li>
+          <li><a href="/contact.html" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu Overlay -->
+      <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-900 bg-opacity-95 flex flex-col justify-center items-center space-y-6 sm:hidden hidden">
+        <ul class="flex flex-col items-center space-y-4">
+          <li><a href="/index.html" class="text-white text-xl hover:text-blue-200">Home</a></li>
+          <li><a href="/about.html" class="text-white text-xl hover:text-blue-200">About</a></li>
+          <li><a href="/experience.html" class="text-white text-xl hover:text-blue-200">Experience</a></li>
+          <li><a href="/projects.html" class="text-white text-xl hover:text-blue-200">Projects</a></li>
+          <li><a href="/contact.html" class="text-white text-xl hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
-  <!-- full‑screen overlay -->
-  <nav id="mobile-menu"
-       class="hidden fixed inset-0 bg-blue-900 flex flex-col items-center justify-center gap-10 text-white text-2xl font-semibold z-40">
-    <a href="/index.html"      class="hover:text-blue-300">Home</a>
-    <a href="/about.html"      class="hover:text-blue-300">About</a>
-    <a href="/experience.html" class="hover:text-blue-300">Experience</a>
-    <a href="/projects.html"   class="hover:text-blue-300">Projects</a>
-    <a href="/contact.html"    class="hover:text-blue-300">Contact</a>
-  </nav>
   <!-- END HEADER -->
 
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">
@@ -59,12 +65,6 @@
             <img src="/assets/images/ocid-logo.png" alt="ORCID Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
           </a>
           <a href="https://www.linkedin.com/in/jgregorywalsh/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <img src="/assets/images/LI-In-Bug.png" alt="LinkedIn Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://www.facebook.com/jgregwalsh/" target="_blank" rel="noopener" aria-label="Facebook">
-            <img src="/assets/images/facebook_logo.png" alt="Facebook Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
             <img src="/assets/images/github_logo_white.png" alt="GitHub Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
           </a>
           <a href="https://x.com/jgregorywalsh" target="_blank" rel="noopener" aria-label="X (Twitter)">
