@@ -20,27 +20,46 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
-    <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
-        <a href="/" class="flex items-center">
-            <img src="assets/images/j-gregory-walsh.png" alt="James Gregory Walsh" class="h-10 w-auto">
-        </a>
-        <nav class="hidden lg:flex space-x-6 font-semibold">
-            <a href="/" class="hover:text-blue-300 transition">Home</a>
-            <a href="/about.html" class="hover:text-blue-300 transition">About</a>
-            <a href="/experience.html" class="hover:text-blue-300 transition">Experience</a>
-            <a href="/projects.html" class="hover:text-blue-300 transition">Projects</a>
-            <a href="/contact.html" class="text-blue-300 font-bold" aria-current="page">Contact</a>
+    <!-- Header -->
+    <header class="w-full bg-blue-900 text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/assets/images/jgregory_walsh_logo_2.png" alt="James Gregory Walsh Logo" class="h-10 w-auto">
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-2" aria-label="Toggle Menu">
+                <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+                </svg>
+            </button>
+            <nav class="hidden md:flex space-x-6 text-base font-semibold">
+                <a href="/index.html" class="hover:text-blue-200">Home</a>
+                <a href="/about.html" class="hover:text-blue-200">About</a>
+                <a href="/experience.html" class="hover:text-blue-200">Experience</a>
+                <a href="/projects.html" class="hover:text-blue-200">Projects</a>
+                <a href="/contact.html" class="hover:text-blue-200">Contact</a>
+            </nav>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-900 bg-opacity-95 flex flex-col justify-center items-center space-y-6 md:hidden transform -translate-x-full transition-transform duration-300 z-50">
+            <a href="/index.html" class="text-white text-xl hover:text-blue-200">Home</a>
+            <a href="/about.html" class="text-white text-xl hover:text-blue-200">About</a>
+            <a href="/experience.html" class="text-white text-xl hover:text-blue-200">Experience</a>
+            <a href="/projects.html" class="text-white text-xl hover:text-blue-200">Projects</a>
+            <a href="/contact.html" class="text-white text-xl hover:text-blue-200">Contact</a>
         </nav>
-        <button id="mobile-menu-button" class="sm:hidden text-white text-3xl ml-auto focus:outline-none" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() {
+                    menu.classList.toggle('-translate-x-full');
+                });
+            }
+        });
+    </script>
 
-    <nav id="mobile-menu" class="fixed inset-0 bg-blue-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold text-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
-        <a href="/" class="navlink">Home</a>
-        <a href="/about.html" class="navlink">About</a>
-        <a href="/experience.html" class="navlink">Experience</a>
-        <a href="/projects.html" class="navlink">Projects</a>
-        <a href="/contact.html" class="navlink">Contact</a>
-    </nav>
     <main class="max-w-5xl mx-auto mt-8 sm:mt-12 px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-8 tracking-tight">Get in Touch</h2>
 
