@@ -60,32 +60,30 @@
           <img src="/assets/images/facebook_logo.png" alt="Facebook Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
         </a>
         <a href="https://x.com/jgregorywalsh" target="_blank" rel="noopener" aria-label="X (Twitter)">
-        <div class="flex flex-wrap gap-4 justify-center md:justify-start items-center mb-4 order-2 md:order-1">
-          <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
-            <img src="/assets/images/ocid-logo.png" alt="ORCID Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://www.linkedin.com/in/jgregorywalsh/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <img src="/assets/images/LI-In-Bug.png" alt="LinkedIn Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://www.facebook.com/jgregwalsh/" target="_blank" rel="noopener" aria-label="Facebook">
-            <img src="/assets/images/facebook_logo.png" alt="Facebook Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
-            <img src="/assets/images/github_logo_white.png" alt="GitHub Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://x.com/jgregorywalsh" target="_blank" rel="noopener" aria-label="X (Twitter)">
-            <img src="/assets/images/logo-black.png" alt="X (Twitter) Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-          </a>
-        </div>
-        <p class="text-sm mb-0 order-1 md:order-2 text-center md:text-left">&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+          <img src="/assets/images/logo-black.png" alt="X (Twitter) Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+        <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="/assets/images/github_logo_white.png" alt="GitHub Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
+        <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
+          <img src="/assets/images/ocid-logo.png" alt="ORCID Profile" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
+        </a>
       </div>
-      <div class="hidden md:block w-full md:w-auto text-right">
-        <p class="text-sm mb-0">&copy; 2025 James Gregory Walsh. All rights reserved.</p>
-      </div>
+      <p class="text-sm text-center mt-4">&copy; 2025 James Gregory Walsh. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', function() {
+          menu.classList.toggle('-translate-x-full');
+        });
+      }
+    });
+
     const toggle = document.getElementById('darkToggle');
     if (toggle) {
       toggle.addEventListener('click', () => {
