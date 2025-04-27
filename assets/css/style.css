@@ -257,13 +257,18 @@ body.dark-mode footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem; /* p-8 */
   margin-left: auto;
   margin-right: auto;
   max-width: 56rem; /* 4xl */
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif';
   color: #1a202c; /* gray-900 */
   min-height: 60vh;
+}
+@media (max-width: 640px) {
+  .main-content {
+    padding: 1rem;
+  }
 }
 
 .main-content h1, .main-content h2, .main-content h3 {
