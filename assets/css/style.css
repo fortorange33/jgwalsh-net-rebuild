@@ -97,13 +97,6 @@ header .header-content, nav ul, nav a, button#mobile-menu-button {
   pointer-events: auto;
 }
 
-/* Hide on desktop, show on mobile */
-@media (min-width: 768px) {
-  #mobile-menu {
-    display: none !important;
-  }
-}
-
 /* Hamburger button focus style */
 #mobile-menu-button:focus {
   outline: 2px solid #fff;
