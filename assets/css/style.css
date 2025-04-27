@@ -86,15 +86,36 @@ header .header-content, nav ul, nav a, button#mobile-menu-button {
 
 /* Mobile Menu (Tailwind transition) */
 #mobile-menu {
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s cubic-bezier(0.4,0,0.2,1);
-  transform: translateY(-16px) scaleY(0.98);
+  position: fixed;
+  inset: 0;
+  background: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   opacity: 0;
+  transform: translateY(-8%);
   pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 #mobile-menu.open {
   opacity: 1;
-  transform: none;
+  transform: translateY(0);
   pointer-events: auto;
+}
+
+/* Ensure links inside the mobile menu are styled correctly */
+#mobile-menu a {
+  color: #fff;
+  font-size: 1.25rem; /* text-xl */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#mobile-menu a:hover {
+  color: #93c5fd; /* light blue */
 }
 
 /* Hamburger button focus style */
