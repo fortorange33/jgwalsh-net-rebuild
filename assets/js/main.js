@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     btn.addEventListener('click', () => {
       menu.classList.toggle('hidden');
+      const isOpen = !menu.classList.contains('hidden');
+      btn.setAttribute('aria-expanded', isOpen.toString());
     });
     btn.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
