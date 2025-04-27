@@ -128,14 +128,22 @@ a:hover { color: var(--clr-primary-light); }
   opacity: 0;
   transform: translateY(-8%);
   pointer-events: none;
-  transition: opacity .3s, transform .3s;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 #mobile-menu.open {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
-#mobile-menu a { color: #fff; font-size: var(--fs-2xl); }
+#mobile-menu a {
+  color: #fff;
+  font-size: var(--fs-2xl);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+#mobile-menu a:hover {
+  color: #93c5fd; /* light blue */
+}
 
 /* ==========================================================================
    6.  FOOTER
