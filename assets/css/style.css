@@ -288,3 +288,10 @@ body.dark-mode footer {
   color: #1a202c;
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif';
 }
+
+.site-footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #1e40af; /* blue-900 */
+  color: #fff;
+}
