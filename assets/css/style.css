@@ -249,3 +249,42 @@ body.dark-mode footer {
 /* simple fade‑up when .visible is toggled by JS */
 .reveal   { opacity:0; transform:translateY(24px); transition:opacity .5s ease,transform .5s ease; }
 .visible  { opacity:1; transform:none; }
+
+/* Main Content Styling */
+.main-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem; /* 4xl */
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif';
+  color: #1a202c; /* gray-900 */
+  min-height: 60vh;
+}
+
+.main-content h1, .main-content h2, .main-content h3 {
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif';
+  color: #1a202c;
+}
+
+.main-content h1 {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.main-content p, .main-content li, .main-content span, .main-content a {
+  font-size: 1rem; /* text-base */
+  color: #1a202c;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, 'sans-serif';
+}
