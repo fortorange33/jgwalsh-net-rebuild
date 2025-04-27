@@ -295,3 +295,23 @@ body.dark-mode footer {
   background-color: #1e40af; /* blue-900 */
   color: #fff;
 }
+
+/* Fixed top navigation */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e40af; /* blue-900 */
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  height: 4rem; /* 64px, adjust as needed for your nav */
+  display: flex;
+  align-items: center;
+}
+
+/* Utility for main content to avoid overlap with fixed nav */
+.mt-nav {
+  margin-top: 4rem; /* match .site-nav height */
+}
