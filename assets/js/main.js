@@ -5,27 +5,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.getElementById('mobile-menu');
 
   if (btn && menu) {
-    const closeMenu = () => {
-      menu.classList.add('hidden');
-      menu.classList.remove('open');
-      btn.setAttribute('aria-expanded', 'false');
-    };
     btn.addEventListener('click', () => {
-      const isHidden = menu.classList.toggle('hidden');
-      btn.setAttribute('aria-expanded', !isHidden);
+      const isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
     });
-    btn.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        btn.click();
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
       }
     });
-    // Close menu when clicking outside (mobile only)
-    document.addEventListener('click', (e) => {
-      if (!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
     });
-    // Optional: close on nav link click
-    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   }
 
   /* ---------- Section reveal ---------- */
