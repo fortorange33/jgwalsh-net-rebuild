@@ -4,64 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | James Gregory Walsh</title>
+
+  <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
-  <link rel="icon" type="image/png" href="assets/Favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/Favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/site.css">
 </head>
-<body data-theme="dark">
-  <nav class="site-nav flex items-center justify-between px-4">
-    <a href="/" class="logo"><img src="/assets/images/jgw_career_pf.png" alt=""></a>
-    <div class="hidden md:flex gap-8 font-semibold">
-      <a href="/">Home</a><a href="/about.html">About</a>
-      <a href="/experience.html">Experience</a>
-      <a href="/projects.html">Projects</a><a href="/contact.html">Contact</a>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
+  <header class="w-full bg-blue-900 text-white fixed top-0 left-0 right-0 z-10 shadow-md">
+    <div class="flex justify-between items-center px-4 py-4">
+      <a href="/" class="text-xl font-bold">James Gregory Walsh</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-300">Home</a>
+        <a href="/about.html" class="hover:text-blue-300">About</a>
+        <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+        <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+        <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle navigation">☰</button>
     </div>
-    <button id="mobile-menu-button" class="md:hidden p-2" aria-label="Toggle Nav">☰</button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden flex-col gap-6 bg-blue-900 text-white p-8">
-    <a href="/">Home</a><a href="/about.html">About</a>
-    <a href="/experience.html">Experience</a>
-    <a href="/projects.html">Projects</a><a href="/contact.html">Contact</a>
-  </div>
-  <main class="main-content mt-16 flex flex-col items-center justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex-grow">
-    <section id="about" class="container w-full px-0 py-0 bg-white rounded-xl shadow-md max-w-4xl">
-      <h1 class="text-4xl font-bold text-blue-900 mb-5 tracking-tight">About | James Gregory Walsh</h1>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-blue-900 flex flex-col items-center justify-center space-y-6 text-white text-xl font-semibold">
+      <a href="/" class="hover:text-blue-300">Home</a>
+      <a href="/about.html" class="hover:text-blue-300">About</a>
+      <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+      <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+      <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+    </div>
+  </header>
 
-      <p class="text-base leading-relaxed mb-5">Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy. My career began in clinical mental health and is now directed towards pursuing law enforcement roles where I can combine psychological insight with analytical precision.</p>
-
-      <p class="text-base leading-relaxed mb-5">My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.</p>
-
-      <p class="text-base leading-relaxed mb-5">Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.</p>
-
-      <p class="text-base leading-relaxed mb-5">The societal shifts highlighted during the COVID-19 pandemic, observed upon returning to Albany, New York, crystallized my professional direction. Witnessing the intersecting challenges within mental health systems and public institutions reinforced my conviction that principled, analytically-driven professionals are essential in modern law enforcement and public service. This led to the formation of my portfolio and its companion project, the <a href="https://albany.watch" class="text-blue-700 underline" target="_blank" rel="noopener">Albany Aegis Initiative</a>—a personal civic effort I developed to explore the integration of behavioral science, community safety, and operational intelligence.</p>
-
-      <p class="text-base leading-relaxed mb-5">My objective is to apply my interdisciplinary skill set—whether through research, field analysis, or collaboration—to serve and strengthen the institutions that protect our communities and uphold our legal and civic frameworks.</p>
-
-      <p class="text-base leading-relaxed mb-6">
-        For a detailed overview of my qualifications and experience, please
-        <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
-      </p>
-    </section>
+  <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-blue-900 mb-5">About | James Gregory Walsh</h1>
+    <p class="text-base leading-relaxed mb-5">
+      Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy.
+    </p>
+    <p class="text-base leading-relaxed mb-5">
+      My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.
+    </p>
+    <p class="text-base leading-relaxed mb-5">
+      Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.
+    </p>
+    <p class="text-base leading-relaxed mb-5">
+      The societal shifts highlighted during the COVID-19 pandemic, observed upon returning to Albany, New York, crystallized my professional direction. Witnessing the intersecting challenges within mental health systems and public institutions reinforced my conviction that principled, analytically-driven professionals are essential in modern law enforcement and public service. This led to the formation of my portfolio and its companion project, the <a href="https://albany.watch" class="text-blue-700 underline" target="_blank" rel="noopener">Albany Aegis Initiative</a>—a personal civic effort I developed to explore the integration of behavioral science, community safety, and operational intelligence.
+    </p>
+    <p class="text-base leading-relaxed mb-5">
+      My objective is to apply my interdisciplinary skill set—whether through research, field analysis, or collaboration—to serve and strengthen the institutions that protect our communities and uphold our legal and civic frameworks.
+    </p>
+    <p class="text-base leading-relaxed mb-6">
+      For a detailed overview of my qualifications and experience, please
+      <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
+    </p>
   </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/jgregorywalsh"  aria-label="LinkedIn"><img src="/assets/images/LI-In-Bug.png"       alt=""></a>
-        <a href="https://www.facebook.com/jgregwalsh"        aria-label="Facebook"><img src="/assets/images/facebook_logo.png" alt=""></a>
-        <a href="https://x.com/jgregorywalsh"                aria-label="X"><img src="/assets/images/logo-black.png"           alt=""></a>
-        <a href="https://github.com/jgwalsh02134"            aria-label="Github"><img src="/assets/images/github_logo_white.png" alt=""></a>
-        <a href="https://orcid.org/0000-0002-4420-5724"      aria-label="ORCID"><img src="/assets/images/ocid-logo.png"        alt=""></a>
+
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
+      <div class="flex space-x-4">
+        <a href="https://www.linkedin.com/in/jgregorywalsh" aria-label="LinkedIn" class="hover:text-blue-300">LinkedIn</a>
+        <a href="https://github.com/jgwalsh02134" aria-label="GitHub" class="hover:text-blue-300">GitHub</a>
       </div>
-      <p class="text-xs text-center md:text-right">© 2025 J. Gregory Walsh. All rights reserved.</p>
+      <p class="text-sm">© 2025 J. Gregory Walsh. All rights reserved.</p>
     </div>
   </footer>
-  <script src="assets/js/main.js" defer></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
 </body>
 </html>

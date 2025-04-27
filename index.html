@@ -8,111 +8,58 @@
 
   <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
-  <link rel="icon" type="image/png" href="assets/Favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/Favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio">
-  <meta property="og:description" content="Showcasing my background in psychology, data analysis, and law enforcement readiness.">
-  <meta property="og:image" content="assets/images/portfolio-og.jpg">
-  <meta property="og:url" content="https://www.jgwalsh.net">
-
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio">
-  <meta name="twitter:description" content="Showcasing my background in psychology, data analysis, and law enforcement readiness.">
-  <meta name="twitter:image" content="assets/images/portfolio-og.jpg">
-
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/site.css">
-  
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
-<body data-theme="dark">
-  <nav class="site-nav flex items-center justify-between px-4">
-    <a href="/" class="logo"><img src="/assets/images/jgw_career_pf.png" alt=""></a>
-    <div class="hidden md:flex gap-8 font-semibold">
-      <a href="/">Home</a><a href="/about.html">About</a>
-      <a href="/experience.html">Experience</a>
-      <a href="/projects.html">Projects</a><a href="/contact.html">Contact</a>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
+  <header class="w-full bg-blue-900 text-white fixed top-0 left-0 right-0 z-10 shadow-md">
+    <div class="flex justify-between items-center px-4 py-4">
+      <a href="/" class="text-xl font-bold">James Gregory Walsh</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-300">Home</a>
+        <a href="/about.html" class="hover:text-blue-300">About</a>
+        <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+        <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+        <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle navigation">☰</button>
     </div>
-    <button id="mobile-menu-button" class="md:hidden p-2" aria-label="Toggle Nav">☰</button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden flex-col gap-6 bg-blue-900 text-white p-8">
-    <a href="/">Home</a><a href="/about.html">About</a>
-    <a href="/experience.html">Experience</a>
-    <a href="/projects.html">Projects</a><a href="/contact.html">Contact</a>
-  </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-blue-900 flex flex-col items-center justify-center space-y-6 text-white text-xl font-semibold">
+      <a href="/" class="hover:text-blue-300">Home</a>
+      <a href="/about.html" class="hover:text-blue-300">About</a>
+      <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+      <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+      <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+    </div>
+  </header>
 
-  <main class="main-content mt-16 flex flex-col items-center justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex-grow">
+  <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5">Welcome</h1>
     <p class="text-base sm:text-lg leading-relaxed mb-5">
       Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in psychology, data analysis, and law enforcement readiness.
     </p>
-
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      I have over three years of experience as a mental health specialist at
-      <a href="https://en.wikipedia.org/wiki/McLean_Hospital"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="text-blue-700 underline">McLean Hospital</a>,
-      specifically within the
-      <a href="https://www.mcleanhospital.org/treatment/mclean-franciscan-child-and-adolescent-inpatient-program"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="text-blue-700 underline">McLean-Franciscan</a>
-      unit, a psychiatric hospital in Brighton, Massachusetts, affiliated with Harvard Medical School. My work involved
-      clinical assessment, crisis intervention, and interdisciplinary collaboration within acute psychiatric settings.
-    </p>
-
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      My educational foundation in psychology—spanning undergraduate and graduate-level training—is enhanced by strong
-      quantitative and analytical capabilities, particularly using SPSS, R, and Excel.
-    </p>
-
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      Returning home to Albany, New York, during the COVID-19 pandemic coincided with significant transformations in
-      clinical psychology and the broader mental health system, most notably the rise of teletherapy. Observing these
-      changes inspired me to reconsider my career direction and explore how my experience might align with alternative
-      professional pathways. This period of reassessment has motivated my current pursuit of opportunities within
-      federal or state law enforcement, aiming to address critical challenges facing local communities and the nation.
-    </p>
-
-    <h2 class="text-3xl font-semibold mt-10 mb-4">Core Competencies</h2>
-    <ul class="list-disc list-inside space-y-4 ml-4 mb-5">
-      <li><strong>Behavioral Assessment and Crisis Intervention</strong></li>
-      <li><strong>Interdisciplinary Collaboration and Communication</strong></li>
-      <li><strong>Advanced Quantitative Analysis</strong> (SPSS, R, Excel)</li>
-      <li><strong>Applied Psychological Principles</strong></li>
-      <li><strong>Adaptability, Critical Thinking, and Analytical Problem-Solving</strong></li>
-    </ul>
+    <!-- Additional content here -->
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/jgregorywalsh"  aria-label="LinkedIn"><img src="/assets/images/LI-In-Bug.png"       alt=""></a>
-        <a href="https://www.facebook.com/jgregwalsh"        aria-label="Facebook"><img src="/assets/images/facebook_logo.png" alt=""></a>
-        <a href="https://x.com/jgregorywalsh"                aria-label="X"><img src="/assets/images/logo-black.png"           alt=""></a>
-        <a href="https://github.com/jgwalsh02134"            aria-label="Github"><img src="/assets/images/github_logo_white.png" alt=""></a>
-        <a href="https://orcid.org/0000-0002-4420-5724"      aria-label="ORCID"><img src="/assets/images/ocid-logo.png"        alt=""></a>
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
+      <div class="flex space-x-4">
+        <a href="https://www.linkedin.com/in/jgregorywalsh" aria-label="LinkedIn" class="hover:text-blue-300">LinkedIn</a>
+        <a href="https://github.com/jgwalsh02134" aria-label="GitHub" class="hover:text-blue-300">GitHub</a>
       </div>
-      <p class="text-xs text-center md:text-right">© 2025 J. Gregory Walsh. All rights reserved.</p>
+      <p class="text-sm">© 2025 J. Gregory Walsh. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
 </body>
 </html>

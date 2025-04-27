@@ -1,165 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact James Gregory Walsh – Professional portfolio in psychology, data, and public safety.">
-    <meta name="keywords" content="James Gregory Walsh, Contact, Portfolio, Psychology, Data, Public Safety">
-    <title>Contact – James Gregory Walsh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | James Gregory Walsh</title>
 
-    <link rel="stylesheet" href="assets/css/tailwind.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/Favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/Favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="manifest" href="/site.webmanifest">
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="assets/css/tailwind.min.css">
 </head>
-<body data-theme="dark">
-    <nav class="site-nav">
-        <div class="container">
-            <a href="/" class="logo"><img src="/assets/images/jgw_career_pf.png" alt="J. Gregory Walsh Logo" /></a>
-            <button id="mobile-menu-button">☰</button>
-            <div id="mobile-menu" class="mobile-menu">
-                <a href="/index.html" class="text-white text-xl hover:text-blue-200">Home</a>
-                <a href="/about.html" class="text-white text-xl hover:text-blue-200">About</a>
-                <a href="/experience.html" class="text-white text-xl hover:text-blue-200">Experience</a>
-                <a href="/projects.html" class="text-white text-xl hover:text-blue-200">Projects</a>
-                <a href="/contact.html" class="text-white text-xl hover:text-blue-200">Contact</a>
-            </div>
-            <div class="menu hidden md:flex">
-                <a href="/index.html" class="hover:text-blue-200">Home</a>
-                <a href="/about.html" class="hover:text-blue-200">About</a>
-                <a href="/experience.html" class="hover:text-blue-200">Experience</a>
-                <a href="/projects.html" class="hover:text-blue-200">Projects</a>
-                <a href="/contact.html" class="hover:text-blue-200">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <main class="main-content flex flex-col items-center justify-center mx-auto max-w-5xl p-8 flex-grow mt-8 sm:mt-12">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-8 tracking-tight">Get in Touch</h2>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
+  <header class="w-full bg-blue-900 text-white fixed top-0 left-0 right-0 z-10 shadow-md">
+    <div class="flex justify-between items-center px-4 py-4">
+      <a href="/" class="text-xl font-bold">James Gregory Walsh</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-300">Home</a>
+        <a href="/about.html" class="hover:text-blue-300">About</a>
+        <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+        <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+        <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle navigation">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-blue-900 flex flex-col items-center justify-center space-y-6 text-white text-xl font-semibold">
+      <a href="/" class="hover:text-blue-300">Home</a>
+      <a href="/about.html" class="hover:text-blue-300">About</a>
+      <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+      <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+      <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+    </div>
+  </header>
 
-        <!-- Contact Info Section -->
-        <div class="space-y-10">
+  <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-blue-900 mb-5">Get in Touch</h1>
+    <p class="text-base leading-relaxed mb-5">
+      Feel free to reach out to me via email or connect with me on LinkedIn.
+    </p>
+    <!-- Additional contact content here -->
+  </main>
 
-            <!-- Contact Details -->
-            <div class="text-sm text-gray-800 space-y-2">
-                <h3 class="text-xl font-semibold text-gray-800">Contact Details</h3>
-                <p><strong>Email:</strong> <a href="mailto:jgwalsh@proton.me" class="text-blue-600 hover:underline">jgwalsh@proton.me</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+16173833745" class="text-blue-600 hover:underline">(617) 383-3745</a></p>
-                <p><strong>Location:</strong> Albany, NY &amp; Boston, MA</p>
-            </div>
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
+      <div class="flex space-x-4">
+        <a href="https://www.linkedin.com/in/jgregorywalsh" aria-label="LinkedIn" class="hover:text-blue-300">LinkedIn</a>
+        <a href="https://github.com/jgwalsh02134" aria-label="GitHub" class="hover:text-blue-300">GitHub</a>
+      </div>
+      <p class="text-sm">© 2025 J. Gregory Walsh. All rights reserved.</p>
+    </div>
+  </footer>
 
-            <!-- Digital Card Button -->
-            <div class="mt-6">
-                <a href="/card" target="_blank"
-                    class="block w-full text-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-lg shadow-md transition">
-                    View Digital Business Card
-                </a>
-            </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
 
-            <!-- Social Buttons -->
-            <div class="pt-6">
-                <h4 class="text-lg font-semibold mb-3">Connect with Me</h4>
-                <div class="flex flex-wrap gap-4 items-center justify-start">
-                    <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"
-                        class="inline-block w-14 h-14 bg-white rounded-full shadow hover:scale-105 transition">
-                        <img src="assets/images/LI-In-Bug.png" alt="LinkedIn" class="w-full h-full object-contain p-2">
-                    </a>
-                    <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank" rel="noopener" title="Siena Alumni Network"
-                        class="inline-block w-14 h-14 bg-white rounded-full shadow hover:scale-105 transition">
-                        <img src="assets/images/siena-logo.png" alt="Siena" class="w-full h-full object-contain p-2">
-                    </a>
-                    <a href="mailto:jgwalsh@bu.edu" title="BU Email"
-                        class="inline-block w-14 h-14 bg-white rounded-full shadow hover:scale-105 transition">
-                        <img src="assets/images/bu-logo.png" alt="BU Email" class="w-full h-full object-contain p-2">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/jgregorywalsh/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                    <img src="/assets/images/LI-In-Bug.png" alt="LinkedIn icon for J. Gregory Walsh" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-                </a>
-                <a href="https://www.facebook.com/jgregwalsh/" target="_blank" rel="noopener" aria-label="Facebook">
-                    <img src="/assets/images/facebook_logo.png" alt="Facebook icon for J. Gregory Walsh" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-                </a>
-                <a href="https://x.com/jgregorywalsh" target="_blank" rel="noopener" aria-label="X (Twitter)">
-                    <img src="/assets/images/logo-black.png" alt="X (Twitter) icon for J. Gregory Walsh" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-                </a>
-                <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
-                    <img src="/assets/images/github_logo_white.png" alt="GitHub icon for J. Gregory Walsh" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-                </a>
-                <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
-                    <img src="/assets/images/ocid-logo.png" alt="ORCID icon for J. Gregory Walsh" class="h-6 object-contain hover:scale-110 transition-transform duration-200">
-                </a>
-            </div>
-            <p class="footer-copyright">
-                © 2025 J. Gregory Walsh. All rights reserved.
-            </p>
-        </div>
-    </footer>
-    <script src="assets/js/main.js" defer></script>
-
-    <style>
-        /* Base Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .contact-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px 0;
-        }
-
-        .contact-buttons a {
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        .contact-buttons a:hover {
-            transform: scale(1.05);
-        }
-
-        .contact-buttons img {
-            max-width: 120px;
-            height: auto;
-            display: block;
-        }
-
-        @media (max-width: 600px) {
-            .contact-buttons img {
-                max-width: 80px;
-            }
-        }
-
-        /* Responsive Layout */
-        @media (min-width: 768px) {
-            .contact-container {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            .contact-form,
-            .contact-info {
-                flex: 1;
-                margin: 0 12px;
-            }
-        }
-    </style>
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
 </body>
 </html>
