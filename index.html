@@ -13,8 +13,10 @@
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
   <header class="w-full bg-blue-900 text-white fixed top-0 left-0 right-0 z-10 shadow-md">
-    <div class="flex justify-between items-center px-4 py-4">
-      <a href="/" class="text-xl font-bold">James Gregory Walsh</a>
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-4">
+      <a href="/" class="flex items-center">
+        <img src="/assets/images/jgw_career_pf.png" alt="J. Gregory Walsh" class="h-12 w-auto">
+      </a>
       <nav class="hidden md:flex space-x-8">
         <a href="/" class="hover:text-blue-300">Home</a>
         <a href="/about.html" class="hover:text-blue-300">About</a>
@@ -22,16 +24,17 @@
         <a href="/projects.html" class="hover:text-blue-300">Projects</a>
         <a href="/contact.html" class="hover:text-blue-300">Contact</a>
       </nav>
-      <button id="mobile-menu-button" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle navigation">☰</button>
-    </div>
-    <div id="mobile-menu" class="hidden fixed inset-0 bg-blue-900 flex flex-col items-center justify-center space-y-6 text-white text-xl font-semibold">
-      <a href="/" class="hover:text-blue-300">Home</a>
-      <a href="/about.html" class="hover:text-blue-300">About</a>
-      <a href="/experience.html" class="hover:text-blue-300">Experience</a>
-      <a href="/projects.html" class="hover:text-blue-300">Projects</a>
-      <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+      <button id="mobile-menu-button" class="md:hidden text-white text-3xl">☰</button>
     </div>
   </header>
+
+  <div id="mobile-menu" class="hidden flex-col bg-blue-900 text-white items-center space-y-6 py-6 md:hidden">
+    <a href="/" class="hover:text-blue-300">Home</a>
+    <a href="/about.html" class="hover:text-blue-300">About</a>
+    <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+    <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+    <a href="/contact.html" class="hover:text-blue-300">Contact</a>
+  </div>
 
   <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5">Welcome</h1>
@@ -43,21 +46,23 @@
 
   <footer class="bg-blue-900 text-white py-8">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
-      <div class="flex space-x-4">
-        <a href="https://www.linkedin.com/in/jgregorywalsh" aria-label="LinkedIn" class="hover:text-blue-300">LinkedIn</a>
-        <a href="https://github.com/jgwalsh02134" aria-label="GitHub" class="hover:text-blue-300">GitHub</a>
+      <div class="flex space-x-6">
+        <a href="https://www.linkedin.com/in/jgregorywalsh"><img src="/assets/images/LI-In-Bug.png" alt="LinkedIn" class="h-6"></a>
+        <a href="https://www.facebook.com/jgregwalsh"><img src="/assets/images/facebook_logo.png" alt="Facebook" class="h-6"></a>
+        <a href="https://x.com/jgregorywalsh"><img src="/assets/images/logo-black.png" alt="X" class="h-6"></a>
+        <a href="https://github.com/jgwalsh02134"><img src="/assets/images/github_logo_white.png" alt="GitHub" class="h-6"></a>
+        <a href="https://orcid.org/0000-0002-4420-5724"><img src="/assets/images/ocid-logo.png" alt="ORCID" class="h-6"></a>
       </div>
-      <p class="text-sm">© 2025 J. Gregory Walsh. All rights reserved.</p>
+      <p class="text-xs">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const menuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      btn?.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
       });
     });
   </script>
