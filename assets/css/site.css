@@ -16,6 +16,13 @@
   box-sizing: border-box;
 }
 
+/* Standardize appearance for compatibility */
+* {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 :root {
   /* color scale */
   --clr-primary: hsl(220 82% 50%);   /* blue-900 */
