@@ -9,30 +9,24 @@
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
-  <header style="background-color: #1e3a8a; color: white; position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 10; box-shadow: 0px 2px 4px rgba(0,0,0,0.2);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
-      <a href="/" style="display: flex; align-items: center;">
-        <img src="/assets/images/jgw_career_pf.png" alt="J. Gregory Walsh Logo" style="height: 40px; width: auto;">
-      </a>
-
-      <nav id="desktop-menu" style="display: none; gap: 1.5rem;">
-        <a href="/" style="color: white; text-decoration: none;">Home</a>
-        <a href="/about.html" style="color: white; text-decoration: none;">About</a>
-        <a href="/experience.html" style="color: white; text-decoration: none;">Experience</a>
-        <a href="/projects.html" style="color: white; text-decoration: none;">Projects</a>
-        <a href="/contact.html" style="color: white; text-decoration: none;">Contact</a>
-      </nav>
-
-      <button id="mobile-menu-button" style="font-size: 2rem; background: none; border: none; color: white; cursor: pointer;">☰</button>
-    </div>
-
-    <div id="mobile-menu" style="display: none; flex-direction: column; align-items: center; background: #1e3a8a; padding: 1rem;">
-      <a href="/" style="color: white; text-decoration: none; margin: 0.5rem 0;">Home</a>
-      <a href="/about.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">About</a>
-      <a href="/experience.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">Experience</a>
-      <a href="/projects.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">Projects</a>
-      <a href="/contact.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">Contact</a>
-    </div>
+  <header style="position:fixed;top:0;left:0;right:0;width:100%;z-index:10;box-shadow:0px 2px 4px rgba(0,0,0,0.2);background:#1e3a8a;color:white;">
+    <nav class="navbar" aria-label="Main navigation" style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:1rem;">
+      <div class="logo" style="display:flex;align-items:center;">
+        <a href="index.html" style="color:white;text-decoration:none;font-weight:700;font-size:1.25rem;">J. Gregory Walsh</a>
+      </div>
+      <ul class="nav-links" style="display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;">
+        <li><a href="about.html" class="active-link" style="color:white;text-decoration:none;">About</a></li>
+        <li><a href="skills.html" style="color:white;text-decoration:none;">Skills</a></li>
+        <li><a href="experience.html" style="color:white;text-decoration:none;">Experience</a></li>
+        <li><a href="projects.html" style="color:white;text-decoration:none;">Projects</a></li>
+        <li><a href="contact.html" style="color:white;text-decoration:none;">Contact</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Open navigation menu" style="display:none;flex-direction:column;gap:4px;cursor:pointer;">
+        <span style="display:block;width:24px;height:3px;background:white;"></span>
+        <span style="display:block;width:24px;height:3px;background:white;"></span>
+        <span style="display:block;width:24px;height:3px;background:white;"></span>
+      </div>
+    </nav>
   </header>
 
   <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,48 +75,39 @@
     </section>
   </main>
 
-  <footer class="bg-blue-900 text-white py-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
-      <div class="flex space-x-6 flex-wrap justify-center">
-        <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" class="h-6"></a>
-        <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" class="h-6"></a>
-        <a href="https://github.com/fortorange33" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" class="h-6"></a>
-        <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID" class="h-6"></a>
-      </div>
-      <p class="text-xs">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
+        <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook">
+      </a>
+      <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+      </a>
+      <a href="https://www.usajobs.gov/" target="_blank" rel="noopener noreferrer" aria-label="USAJOBS Website">
+        <img src="https://img.shields.io/badge/USAJOBS.GOV-005288?style=flat-square&logo=briefcase&logoColor=white" alt="USAJOBS.GOV">
+      </a>
+      <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener noreferrer" aria-label="ORCID Profile">
+        <img src="https://img.shields.io/badge/ORCID-0000--0002--4420--5724-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID Profile">
+      </a>
+      <a href="mailto:jgwalsh@proton.me" target="_blank" rel="noopener noreferrer" aria-label="Send Email to ProtonMail">
+        <img src="https://img.shields.io/badge/Email-jgwalsh@proton.me-6D4AFF?style=flat-square&logo=protonmail&logoColor=white" alt="Email jgwalsh@proton.me">
+      </a>
+      <a href="https://jgwalsh.net/" target="_blank" rel="noopener noreferrer" aria-label="Visit Personal Website">
+        <img src="https://img.shields.io/badge/Website-jgwalsh.net-000000?style=flat-square&logo=internet-explorer&logoColor=white" alt="Personal Website jgwalsh.net">
+      </a>
+      <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank" rel="noopener noreferrer" aria-label="Siena College Saints Network Profile">
+        <img src="https://img.shields.io/badge/Siena_College-Network-00693E?style=flat-square&labelColor=FFD100&logoColor=FFD100" alt="Siena College Saints Network Profile">
+      </a>
+      <a href="mailto:jgwalsh@bu.edu" target="_blank" rel="noopener noreferrer" aria-label="Send Email to Boston University Address">
+        <img src="https://img.shields.io/badge/Boston%20University-jgwalsh@bu.edu-CC0000?style=flat-square&logoColor=white" alt="Boston University Email">
+      </a>
+    </div>
+    <div class="footer-copy">
+      © 2025 J. Gregory Walsh. All rights reserved.
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const button = document.getElementById('mobile-menu-button');
-      const desktopMenu = document.getElementById('desktop-menu');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      // Toggle mobile menu on small screens
-      button.addEventListener('click', () => {
-        if (mobileMenu.style.display === 'flex') {
-          mobileMenu.style.display = 'none';
-        } else {
-          mobileMenu.style.display = 'flex';
-        }
-      });
-
-      // Detect screen width and toggle menus
-      const handleResize = () => {
-        if (window.innerWidth >= 768) {
-          desktopMenu.style.display = 'flex';
-          mobileMenu.style.display = 'none';
-          button.style.display = 'none';
-        } else {
-          desktopMenu.style.display = 'none';
-          button.style.display = 'block';
-        }
-      };
-
-      window.addEventListener('resize', handleResize);
-      handleResize(); // Call it initially
-    });
-  </script>
 </body>
 </html>
