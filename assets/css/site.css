@@ -117,30 +117,39 @@ a:hover { color: var(--clr-primary-light); }
    5.  MOBILE MENU PANEL
    ========================================================================== */
 #mobile-menu {
-  position: fixed;
-  inset: 0;
-  background: var(--clr-primary);
-  display: flex;
+  /* Tailwind classes like 'hidden', 'flex-col', 'bg-blue-900', etc. are applied in HTML */
+  /* These styles define the transition */
+  position: fixed; /* Ensure it's positioned correctly */
+  inset: 0; /* Cover the screen */
+  display: flex; /* Use flex for centering items */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  background: var(--clr-primary); /* Ensure background is set */
+  color: #fff; /* Ensure text color is set */
   opacity: 0;
-  transform: translateY(-8%);
+  transform: scaleY(0.95); /* Start slightly scaled down */
+  transform-origin: top; /* Scale from the top */
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 #mobile-menu.open {
   opacity: 1;
-  transform: translateY(0);
+  transform: scaleY(1); /* Scale to full height */
   pointer-events: auto;
 }
+
 #mobile-menu a {
+  /* Styles for links within the mobile menu */
   color: #fff;
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-xl); /* Adjusted size */
   text-decoration: none;
   transition: color 0.2s ease;
+  padding: 0.5rem 1rem;
 }
+
 #mobile-menu a:hover {
   color: #93c5fd; /* light blue */
 }

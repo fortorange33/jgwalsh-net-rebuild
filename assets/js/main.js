@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btn && menu) {
     btn.addEventListener('click', () => {
+      // Toggle only the 'open' class
       const isOpen = menu.classList.toggle('open');
       btn.setAttribute('aria-expanded', isOpen);
     });
 
+    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
         menu.classList.remove('open');
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Close menu on link click
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menu.classList.remove('open');
