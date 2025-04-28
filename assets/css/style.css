@@ -339,6 +339,49 @@ body.dark-mode footer {
   width: 100%;
   background: var(--color-primary);
   color: #fff;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-badges img {
+  height: 32px;
+  transition: opacity 0.3s;
+}
+
+.footer-badges img:hover {
+  opacity: 0.8;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .site-footer {
+  background-color: #1c1c1e; /* Dark background */
+}
+
+body.dark-mode .footer-text {
+  color: #b0b0b5; /* Lighter gray for readability */
+}
+
+/* Optional: dark mode slight opacity for badges if desired */
+body.dark-mode .footer-badges img {
+  filter: brightness(0.9);
 }
 
 /* Fixed top navigation */
