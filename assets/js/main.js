@@ -6,15 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btn && menu) {
     btn.addEventListener('click', () => {
-      // Toggle only the 'open' class
-      const isOpen = menu.classList.toggle('open');
-      btn.setAttribute('aria-expanded', isOpen);
+      // Toggle the 'hidden' class as requested
+      const isHidden = menu.classList.toggle('hidden');
+      // Update aria-expanded based on the presence of 'hidden'
+      btn.setAttribute('aria-expanded', !isHidden);
     });
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
-        menu.classList.remove('open');
+      // Check if the menu is NOT hidden before trying to close
+      if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.add('hidden');
         btn.setAttribute('aria-expanded', 'false');
       }
     });
@@ -22,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close menu on link click
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        menu.classList.remove('open');
+        menu.classList.add('hidden');
         btn.setAttribute('aria-expanded', 'false');
       });
     });
