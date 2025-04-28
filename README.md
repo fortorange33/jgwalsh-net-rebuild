@@ -1,5 +1,7 @@
 # James Gregory Walsh Portfolio Website Rebuild
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jgregorywalsh) [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/jgregwalsh) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/fortorange33) [![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-4420-5724) [![Siena College](https://img.shields.io/badge/Siena_College-006747?style=flat-square&logoColor=white)](https://saintsnetwork.siena.edu/profile/gregwalsh/) [![Boston University](https://img.shields.io/badge/Boston_University-cc0000?style=flat-square&logoColor=ffffff)](mailto:jgwalsh@bu.edu)
+
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-live-success?logo=cloudflare&logoColor=f38020&style=flat-square)](https://jgwalsh.net)
 
 [![GitHub Repository](https://img.shields.io/badge/Source-GitHub-black?logo=github&style=flat-square)](https://github.com/fortorange33/jgwalsh-net-rebuild)
