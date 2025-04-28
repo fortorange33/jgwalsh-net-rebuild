@@ -70,6 +70,37 @@ code .
 
 ---
 
+## # Production Launch Checklist
+
+Before launching or announcing your site, ensure the following items are complete:
+
+- [ ] **Favicon**: Add a favicon.ico and/or favicon.png in the root directory. Reference it in <head>:
+  ```html
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  ```
+- [ ] **Meta Tags**: Ensure each page has descriptive <title>, <meta name="description">, and <meta name="author"> tags.
+- [ ] **Open Graph & Twitter Cards**: Add meta tags for social sharing:
+  ```html
+  <meta property="og:title" content="James Gregory Walsh Portfolio">
+  <meta property="og:description" content="Psychology, law enforcement, and public safety innovation.">
+  <meta property="og:image" content="/assets/images/og-image.png">
+  <meta property="og:url" content="https://jgwalsh.net">
+  <meta name="twitter:card" content="summary_large_image">
+  ```
+- [ ] **SEO**: Use semantic HTML5 (header, main, footer, nav, section, article). Add alt text to all images. Use descriptive link text.
+- [ ] **Robots.txt**: Add a /robots.txt file to allow search engines to index your site.
+- [ ] **Sitemap**: Add a /sitemap.xml for better SEO (optional for small sites).
+- [ ] **404 Page**: Create a custom 404.html with navigation back to home.
+- [ ] **Accessibility**: Use aria-labels, alt attributes, and ensure keyboard navigation works.
+- [ ] **Performance**: Enable Cloudflare minification, Brotli compression, and caching.
+- [ ] **HTTPS**: Enforce HTTPS in Cloudflare SSL/TLS settings.
+- [ ] **Analytics**: (Optional) Add privacy-friendly analytics (e.g., Plausible, Fathom, or Cloudflare Web Analytics).
+- [ ] **Test**: Check all links, forms, and navigation on desktop and mobile.
+- [ ] **Dark Mode**: (Optional) Add a dark mode toggle for user preference.
+
+---
+
 ## 🧾 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
