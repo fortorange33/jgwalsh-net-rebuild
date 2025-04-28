@@ -10,11 +10,11 @@
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
   <header class="w-full bg-blue-900 text-white fixed top-0 left-0 right-0 z-10 shadow-md">
-    <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
       <a href="/" class="flex items-center">
-        <img src="/assets/images/jgw_career_pf.png" alt="J. Gregory Walsh" class="h-12 w-auto">
+        <img src="/assets/images/jgw_career_pf.png" alt="J. Gregory Walsh Logo" class="h-10 w-auto">
       </a>
-      <!-- Desktop Navigation -->
+
       <nav class="hidden md:flex space-x-8">
         <a href="/" class="hover:text-blue-300">Home</a>
         <a href="/about.html" class="hover:text-blue-300">About</a>
@@ -22,19 +22,19 @@
         <a href="/projects.html" class="hover:text-blue-300">Projects</a>
         <a href="/contact.html" class="hover:text-blue-300">Contact</a>
       </nav>
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-button" class="md:hidden text-white text-3xl" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+
+      <button id="mobile-menu-button" class="md:hidden text-white text-3xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col bg-blue-900 text-white items-center space-y-6 py-6 md:hidden">
+      <a href="/" class="hover:text-blue-300">Home</a>
+      <a href="/about.html" class="hover:text-blue-300">About</a>
+      <a href="/experience.html" class="hover:text-blue-300">Experience</a>
+      <a href="/projects.html" class="hover:text-blue-300">Projects</a>
+      <a href="/contact.html" class="hover:text-blue-300">Contact</a>
     </div>
   </header>
-
-  <!-- Mobile Menu Panel -->
-  <div id="mobile-menu" class="hidden flex-col bg-blue-900 text-white items-center space-y-6 py-6 md:hidden fixed inset-x-0 top-16 z-20">
-    <a href="/" class="hover:text-blue-300">Home</a>
-    <a href="/about.html" class="hover:text-blue-300">About</a>
-    <a href="/experience.html" class="hover:text-blue-300">Experience</a>
-    <a href="/projects.html" class="hover:text-blue-300">Projects</a>
-    <a href="/contact.html" class="hover:text-blue-300">Contact</a>
-  </div>
 
   <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-4xl font-bold text-blue-900 mb-5">Thank You</h1>
@@ -56,6 +56,14 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    });
+  </script>
 </body>
 </html>
