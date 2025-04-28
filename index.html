@@ -8,23 +8,27 @@
 
   <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
   <!-- Header -->
   <header style="position:fixed;top:0;left:0;right:0;width:100%;z-index:10;box-shadow:0px 2px 4px rgba(0,0,0,0.2);background:#1e3a8a;color:white;">
-    <nav class="navbar" style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:1rem;">
+    <nav class="navbar" aria-label="Main navigation" style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:1rem;">
       <div class="logo" style="display:flex;align-items:center;">
         <a href="/" style="color:white;text-decoration:none;font-weight:700;font-size:1.25rem;">J. Gregory Walsh</a>
       </div>
-      <ul class="nav-links" style="display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;"></ul>
-        <li><a href="/#about" style="color:white;text-decoration:none;">About</a></li>
+      <ul class="nav-links" style="display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;">
+        <li><a href="/#about" class="active-link" style="color:white;text-decoration:none;">About</a></li>
         <li><a href="/#skills" style="color:white;text-decoration:none;">Skills</a></li>
         <li><a href="/#experience" style="color:white;text-decoration:none;">Experience</a></li>
         <li><a href="/#contact" style="color:white;text-decoration:none;">Contact</a></li>
       </ul>
-      <div class="hamburger" style="display:none;flex-direction:column;gap:4px;cursor:pointer;">
+      <div class="hamburger" aria-label="Open navigation menu" style="display:none;flex-direction:column;gap:4px;cursor:pointer;">
         <span style="display:block;width:24px;height:3px;background:white;"></span>
         <span style="display:block;width:24px;height:3px;background:white;"></span>
         <span style="display:block;width:24px;height:3px;background:white;"></span>
@@ -32,7 +36,7 @@
     </nav>
   </header>
 
-  <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+  <main class="main-content flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-5">Welcome</h1>
     <p class="text-base sm:text-lg leading-relaxed mb-5">
       Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in <strong>psychology</strong>, <strong>behavioral expertise</strong>, and <strong>law enforcement readiness</strong>. My journey began with clinical experience at
@@ -51,15 +55,9 @@
     </ul>
   </main>
 
-  <footer class="bg-blue-900 text-white py-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
-      <div class="flex space-x-6 flex-wrap justify-center">
-        <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" class="h-6"></a>
-        <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" class="h-6"></a>
-        <a href="https://github.com/fortorange33" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" class="h-6"></a>
-        <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID" class="h-6"></a>
-      </div>
-      <p class="text-xs">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
+  <footer class="site-footer" style="background:#1e3a8a;color:white;text-align:center;padding:1.5rem 0;">
+    <div style="max-width:1200px;margin:0 auto;">
+      &copy; 2025 J. Gregory Walsh &mdash; <a href="/" style="color:#60a5fa;">Home</a> | <a href="/#about" style="color:#60a5fa;">About</a> | <a href="/#contact" style="color:#60a5fa;">Contact</a>
     </div>
   </footer>
 

@@ -9,4 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.setAttribute('aria-expanded', !isHidden);
     });
   }
+
+  // Hamburger menu toggle for new navbar
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 });
