@@ -335,6 +335,10 @@ body.dark-mode footer {
 }
 
 .site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   background-color: #f8f9fa;
   text-align: center;
@@ -364,6 +368,14 @@ body.dark-mode footer {
   margin-top: 12px;
   font-size: 0.9rem;
   color: #6c757d;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer-badges {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 /* Dark Mode Styles */
