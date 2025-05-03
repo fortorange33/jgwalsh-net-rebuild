@@ -486,3 +486,66 @@ body.dark-mode .footer-badges img {
     display: flex;
   }
 }
+
+/*
+Responsive Footer Example (Flexbox)
+----------------------------------
+HTML:
+<footer class="site-footer">
+  <nav class="footer-links">
+    <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    <a href="https://facebook.com/jgregwalsh" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook"></a>
+    <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+    <a href="https://www.usajobs.gov/" target="_blank" rel="noopener" aria-label="USAJOBS"><img src="https://img.shields.io/badge/USAJOBS.GOV-005288?style=flat-square&logo=briefcase&logoColor=white" alt="USAJOBS"></a>
+    <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID"><img src="https://img.shields.io/badge/ORCID-0000--0002--4420--5724-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"></a>
+    <a href="mailto:jgwalsh@proton.me" target="_blank" rel="noopener" aria-label="Email"><img src="https://img.shields.io/badge/Email-jgwalsh@proton.me-6D4AFF?style=flat-square&logo=protonmail&logoColor=white" alt="Email"></a>
+    <a href="https://jgwalsh.net/" target="_blank" rel="noopener" aria-label="Website"><img src="https://img.shields.io/badge/Website-jgwalsh.net-000000?style=flat-square&logo=internet-explorer&logoColor=white" alt="Website"></a>
+  </nav>
+  <div class="footer-text">© 2025 J. Gregory Walsh. All rights reserved.</div>
+</footer>
+
+CSS:
+.site-footer {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 24px 0 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+.footer-links a {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.footer-links a:hover {
+  background: #e0e7ef;
+  box-shadow: 0 2px 8px rgba(30,58,138,0.08);
+}
+.footer-links img {
+  height: 32px;
+  display: block;
+}
+.footer-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+*/
