@@ -7,14 +7,21 @@ const newFooter = `
   <div class="footer-container">
     <p class="footer-mission">Dedicated to public service at the intersection of behavioral science, justice, and national security.</p>
     <div class="footer-links" aria-label="External links">
-      <a href="https://linkedin.com/in/jgregorywalsh" target="_blank"><span aria-hidden="true">🔗</span> LinkedIn</a>
-      <a href="https://github.com/jgwalsh02134" target="_blank"><span aria-hidden="true">💻</span> GitHub</a>
-      <a href="https://www.usajobs.gov/" target="_blank"><span aria-hidden="true">🏛️</span> USAJOBS</a>
-      <a href="https://orcid.org/0000-0002-4420-5724" target="_blank"><span aria-hidden="true">📚</span> ORCID</a>
-      <a href="mailto:jgwalsh@proton.me"><span aria-hidden="true">✉️</span> Email</a>
-      <a href="https://jgwalsh.net" target="_blank"><span aria-hidden="true">🌐</span> Website</a>
-      <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank"><span aria-hidden="true">🏫</span> Siena College</a>
-      <a href="mailto:jgwalsh@bu.edu"><span aria-hidden="true">🎓</span> Boston University</a>
+      <span class="footer-item"><a href="https://linkedin.com/in/jgregorywalsh" target="_blank"><img src="assets/icons/linkedin.svg" alt="" aria-hidden="true" class="icon"> LinkedIn</a></span>
+      &middot;
+      <span class="footer-item"><a href="https://github.com/jgwalsh02134" target="_blank"><img src="assets/icons/github.svg" alt="" aria-hidden="true" class="icon"> GitHub</a></span>
+      &middot;
+      <span class="footer-item"><a href="https://www.usajobs.gov/" target="_blank"><img src="assets/icons/usajobs.svg" alt="" aria-hidden="true" class="icon"> USAJOBS</a></span>
+      &middot;
+      <span class="footer-item"><a href="https://orcid.org/0000-0002-4420-5724" target="_blank"><img src="assets/icons/orcid.svg" alt="" aria-hidden="true" class="icon"> ORCID</a></span>
+      &middot;
+      <span class="footer-item"><a href="mailto:jgwalsh@proton.me"><img src="assets/icons/email.svg" alt="" aria-hidden="true" class="icon"> Email</a></span>
+      &middot;
+      <span class="footer-item"><a href="https://jgwalsh.net" target="_blank"><img src="assets/icons/website.svg" alt="" aria-hidden="true" class="icon"> Website</a></span>
+      &middot;
+      <span class="footer-item"><a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank"><img src="assets/icons/siena.svg" alt="" aria-hidden="true" class="icon"> Siena College</a></span>
+      &middot;
+      <span class="footer-item"><a href="mailto:jgwalsh@bu.edu"><img src="assets/icons/boston-university.svg" alt="" aria-hidden="true" class="icon"> Boston University</a></span>
     </div>
     <div class="footer-credit">
       <p>© 2025 J. Gregory Walsh. All rights reserved.</p>
