@@ -52,27 +52,82 @@
     <!-- Additional project content here -->
   </main>
 
-  
+  <footer class="site-footer" role="contentinfo" aria-label="Professional profile footer">
+    <style>
+      .site-footer {
+        background-color: #0f172a;
+        color: #f8fafc;
+        padding: 2rem 1rem;
+        font-family: 'Open Sans', sans-serif;
+        border-top: 1px solid #1e293b;
+      }
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .footer-logo {
+        width: 120px;
+        margin-bottom: 1rem;
+      }
+      .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .footer-nav a {
+        color: #93c5fd;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .footer-nav a:hover {
+        color: #38bdf8;
+      }
+      .footer-cta {
+        margin-bottom: 1rem;
+      }
+      .footer-cta a {
+        background-color: #2563eb;
+        color: #fff;
+        padding: 0.5rem 1.25rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      .footer-cta a:hover {
+        background-color: #1d4ed8;
+      }
+      .footer-credit {
+        font-size: 0.875rem;
+        opacity: 0.7;
+      }
+    </style>
 
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-links">
-      <a href="https://linkedin.com/in/jgregorywalsh" target="_blank">LinkedIn</a>
-      <a href="https://github.com/jgwalsh02134" target="_blank">GitHub</a>
-      <a href="https://www.usajobs.gov/" target="_blank">USAJOBS</a>
-      <a href="https://orcid.org/0000-0002-4420-5724" target="_blank">ORCID</a>
-      <a href="mailto:jgwalsh@proton.me">Email</a>
-      <a href="https://jgwalsh.net" target="_blank">Website</a>
-      <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" target="_blank">Siena College</a>
-      <a href="mailto:jgwalsh@bu.edu">Boston University</a>
+    <div class="footer-container">
+      <img src="assets/icons/logo.svg" alt="J. Gregory Walsh Logo" class="footer-logo" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-cta">
+        <p>Have a project or opportunity to discuss?</p>
+        <a href="mailto:jgwalsh@proton.me">Contact Me</a>
+      </div>
+      <div class="footer-credit">
+        <p>© 2025 J. Gregory Walsh. All rights reserved.</p>
+      </div>
     </div>
-    <div class="footer-credit">
-      <p>© 2025 J. Gregory Walsh. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-
+  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
