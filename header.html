@@ -16,24 +16,22 @@
 <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
     <a href="index.html" class="text-xl font-bold">J. Gregory Walsh</a>
-    <button id="menu-toggle" aria-label="Toggle menu" class="md:hidden text-2xl focus:outline-none">☰</button>
-    <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base" role="navigation">
-      <li><a href="about.html" class="hover:underline">About</a></li>
-      <li><a href="skills.html" class="hover:underline">Skills</a></li>
-      <li><a href="experience.html" class="hover:underline">Experience</a></li>
-      <li><a href="projects.html" class="hover:underline">Projects</a></li>
-      <li><a href="contact.html" class="hover:underline">Contact</a></li>
-    </ul>
+    <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
   </div>
+  <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 mt-4 md:mt-0 text-sm sm:text-base text-white md:items-center md:justify-center">
+    <a href="about.html" class="hover:underline">About</a>
+    <a href="skills.html" class="hover:underline">Skills</a>
+    <a href="experience.html" class="hover:underline">Experience</a>
+    <a href="projects.html" class="hover:underline">Projects</a>
+    <a href="contact.html" class="hover:underline">Contact</a>
+  </nav>
 </header>
 
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
 
-  <nav id="mobile-menu" class="hidden fixed inset-0 bg-[#1C2B36] flex flex-col items-center justify-center gap-6 text-white text-xl font-semibold z-40">
-    <a href="/index.html" class="hover:text-[#F39200]">Home</a>
-    <a href="/about.html" class="hover:text-[#F39200]">About</a>
-    <a href="/experience.html" class="hover:text-[#F39200]">Experience</a>
-    <a href="/projects.html" class="hover:text-[#F39200]">Projects</a>
-    <a href="/contact.html" class="hover:text-[#F39200]">Contact</a>
-  </nav>
 </body>
 </html>
