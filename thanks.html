@@ -8,16 +8,20 @@
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
   
+
 <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
-    <a href="index.html" class="text-lg font-bold hover:underline">J. Gregory Walsh</a>
-    <nav role="navigation" aria-label="Main navigation">
-      <ul class="flex gap-6 text-sm">
-        <li><a href="about.html" class="hover:underline">About</a></li>
-        <li><a href="skills.html" class="hover:underline">Skills</a></li>
-        <li><a href="experience.html" class="hover:underline">Experience</a></li>
-        <li><a href="projects.html" class="hover:underline">Projects</a></li>
-        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+  <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between">
+    <a href="index.html" class="text-xl font-bold block w-full md:w-auto mb-2 md:mb-0">
+      J. Gregory Walsh
+    </a>
+    <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
+    <nav class="w-full md:w-auto">
+      <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 text-sm sm:text-base text-center md:text-left">
+        <li><a href="about.html" class="block py-1 hover:underline">About</a></li>
+        <li><a href="skills.html" class="block py-1 hover:underline">Skills</a></li>
+        <li><a href="experience.html" class="block py-1 hover:underline">Experience</a></li>
+        <li><a href="projects.html" class="block py-1 hover:underline">Projects</a></li>
+        <li><a href="contact.html" class="block py-1 hover:underline">Contact</a></li>
       </ul>
     </nav>
   </div>
