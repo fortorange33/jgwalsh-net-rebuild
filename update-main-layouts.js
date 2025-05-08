@@ -15,15 +15,15 @@ function getAllHtmlFiles(dir) {
   return results;
 }
 
-const mainRegex = /<main[\s\S]*?<\/main>/gi;
-const mainWrapper = `\n<main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">\n  <!-- PAGE CONTENT GOES HERE -->\n</main>`;
+const mainRegex = /<main[\s\S]*?>([\s\S]*?)<\/main>/gi;
 
 getAllHtmlFiles('.').forEach(filePath => {
   let content = fs.readFileSync(filePath, 'utf-8');
 
-  if (mainRegex.test(content)) {
-    content = content.replace(mainRegex, mainWrapper);
-    fs.writeFileSync(filePath, content, 'utf-8');
-    console.log(`✅ Updated <main> block in ${filePath}`);
-  }
+  content = content.replace(mainRegex, (_, inner) => {
+    return `<main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">\n${inner.trim()}\n</main>`;
+  });
+
+  fs.writeFileSync(filePath, content, 'utf-8');
+  console.log(`✅ Preserved and updated <main> in ${filePath}`);
 });
