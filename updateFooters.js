@@ -29,6 +29,8 @@ fs.readdirSync(directoryPath).forEach(file => {
     let content = fs.readFileSync(filePath, 'utf-8');
     if (content.includes('<footer')) {
       content = content.replace(/<footer[\s\S]*?<\/footer>/g, newFooter);
+      const backupPath = filePath + '.bak';
+      fs.writeFileSync(backupPath, content, 'utf-8');
       fs.writeFileSync(filePath, content, 'utf-8');
       console.log(`✅ Updated footer in ${file}`);
     }
