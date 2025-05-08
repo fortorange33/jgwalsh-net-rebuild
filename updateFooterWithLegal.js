@@ -2,16 +2,12 @@ const fs = require('fs');
 const path = require('path');
 
 const newFooter = `
-<footer class="bg-gray-900 text-white py-6">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
-    <div class="text-sm text-gray-400">
-      © 2025 J. Gregory Walsh. All rights reserved.
-    </div>
-    <div class="flex space-x-4 mt-4 sm:mt-0">
-      <a href="privacy-policy.html" class="text-sm text-gray-300 hover:text-white transition">Privacy Policy</a>
-      <a href="terms-of-service.html" class="text-sm text-gray-300 hover:text-white transition">Terms of Service</a>
-    </div>
-  </div>
+<footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
+  <p class="mb-2">
+    <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
+    <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
+  </p>
+  <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
 </footer>
 `;
 
