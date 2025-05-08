@@ -12,21 +12,32 @@ const header = `\n<header class=\"bg-blue-900 text-white p-4 shadow-md\" role=\"
 
 const footer = `\n<footer class=\"site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm\">\n  <p class=\"mb-2\">\n    <a href=\"privacy-policy.html\" class=\"text-blue-400 hover:underline\">Privacy Policy</a> |\n    <a href=\"terms-of-service.html\" class=\"text-blue-400 hover:underline\">Terms of Service</a>\n  </p>\n  <p class=\"text-gray-400\">© 2025 J. Gregory Walsh. All rights reserved.</p>\n</footer>`;
 
-fs.readdirSync('.').forEach(file => {
-  if (file.endsWith('.html')) {
-    const filePath = path.join('.', file);
-    let content = fs.readFileSync(filePath, 'utf-8');
+function getAllHtmlFiles(dir) {
+  let results = [];
+  fs.readdirSync(dir).forEach(file => {
+    const fullPath = path.join(dir, file);
+    const stat = fs.statSync(fullPath);
+    if (stat.isDirectory()) {
+      results = results.concat(getAllHtmlFiles(fullPath));
+    } else if (file.endsWith('.html')) {
+      results.push(fullPath);
+    }
+  });
+  return results;
+}
 
-    // Extract original <title>
-    const titleMatch = content.match(/<title>(.*?)<\/title>/i);
-    const title = titleMatch ? titleMatch[1] : 'J. Gregory Walsh';
+getAllHtmlFiles('.').forEach(filePath => {
+  let content = fs.readFileSync(filePath, 'utf-8');
 
-    // Replace <head>, <header>, <footer>
-    content = content.replace(/<!DOCTYPE[\s\S]*?<head>[\s\S]*?<\/head>/i, generateHead(title));
-    content = content.replace(/<header[\s\S]*?<\/header>/gi, header);
-    content = content.replace(/<footer[\s\S]*?<\/footer>/gi, footer);
+  // Extract original <title>
+  const titleMatch = content.match(/<title>(.*?)<\/title>/i);
+  const title = titleMatch ? titleMatch[1] : 'J. Gregory Walsh';
 
-    fs.writeFileSync(filePath, content, 'utf-8');
-    console.log(`✅ Updated layout in ${file}`);
-  }
+  // Replace <head>, <header>, <footer>
+  content = content.replace(/<!DOCTYPE[\s\S]*?<head>[\s\S]*?<\/head>/i, generateHead(title));
+  content = content.replace(/<header[\s\S]*?<\/header>/gi, header);
+  content = content.replace(/<footer[\s\S]*?<\/footer>/gi, footer);
+
+  fs.writeFileSync(filePath, content, 'utf-8');
+  console.log(`✅ Updated layout in ${filePath}`);
 });
