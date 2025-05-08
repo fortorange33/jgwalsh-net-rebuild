@@ -7,7 +7,6 @@
   <title>J. Gregory Walsh</title>
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
-  <!-- Header -->
   
 <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
@@ -25,44 +24,25 @@
 </header>
 
 
-  <main class="main-content flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-5">Welcome</h1>
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in <strong>psychology</strong>, <strong>behavioral expertise</strong>, and <strong>law enforcement readiness</strong>. My journey began with clinical experience at
-      <a href="https://www.mcleanhospital.org" class="hover:underline">McLean Hospital</a> and the
-      <a href="https://www.massgeneralbrigham.org/en/about/mclean-hospital" class="hover:underline">McLean-Franciscan Child & Adolescent Inpatient Program</a>, affiliated with Harvard Medical School.
+  <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-blue-900 mb-5">About | James Gregory Walsh</h1>
+    <p class="text-base leading-relaxed mb-5">
+      Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy.
     </p>
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      I leverage this foundation to develop data-driven solutions for complex challenges in behavioral assessment, crisis response, and investigative strategy. Explore my work and connect with me to discuss potential collaborations.
+    <p class="text-base leading-relaxed mb-5">
+      My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.
     </p>
-    <h2 class="text-2xl font-semibold mb-4">Core Competencies</h2>
-    <ul class="list-disc list-inside space-y-2 text-gray-800 mb-5">
-      <li><strong>Behavioral Analysis:</strong> Identifying patterns and predicting outcomes.</li>
-      <li><strong>Data Visualization:</strong> Translating complex data into actionable insights.</li>
-      <li><strong>Psychological Principles:</strong> Applying evidence-based methods to enhance outcomes.</li>
-      <li><strong>Critical Thinking:</strong> Navigating complex challenges with clarity and precision.</li>
-    </ul>
+    <p class="text-base leading-relaxed mb-5">
+      Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.
+    </p>
+    <p class="text-base leading-relaxed mb-5">
+      My goal is to bridge the gap between psychological science and practical application in high-stakes environments. I am passionate about using data to inform better decision-making, enhance public safety, and promote accountability. Explore my <a href="/projects.html" class="text-blue-600 hover:underline">projects</a> and <a href="/experience.html" class="text-blue-600 hover:underline">experience</a> to learn more, or
+      <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
+    </p>
   </main>
 
   
 <footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
-  <div class="flex justify-center gap-4 mb-4">
-    <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
-      <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
-    </a>
-    <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
-      <img src="assets/icons/facebook.svg" alt="Facebook" class="h-6 w-6" />
-    </a>
-    <a href="https://github.com/fortorange33" target="_blank" rel="noopener">
-      <img src="assets/icons/github.svg" alt="GitHub" class="h-6 w-6" />
-    </a>
-    <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener">
-      <img src="assets/icons/orcid.svg" alt="ORCID" class="h-6 w-6" />
-    </a>
-    <a href="https://usajobs.gov" target="_blank" rel="noopener">
-      <img src="assets/icons/usajobs.svg" alt="USAJOBS" class="h-6 w-6" />
-    </a>
-  </div>
   <p class="mb-2">
     <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
     <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>

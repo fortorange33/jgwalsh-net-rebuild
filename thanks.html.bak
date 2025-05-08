@@ -7,7 +7,6 @@
   <title>J. Gregory Walsh</title>
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
-  <!-- Header -->
   
 <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
@@ -25,44 +24,16 @@
 </header>
 
 
-  <main class="main-content flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-5">Welcome</h1>
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in <strong>psychology</strong>, <strong>behavioral expertise</strong>, and <strong>law enforcement readiness</strong>. My journey began with clinical experience at
-      <a href="https://www.mcleanhospital.org" class="hover:underline">McLean Hospital</a> and the
-      <a href="https://www.massgeneralbrigham.org/en/about/mclean-hospital" class="hover:underline">McLean-Franciscan Child & Adolescent Inpatient Program</a>, affiliated with Harvard Medical School.
+  <main class="flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl font-bold text-blue-900 mb-5">Thank You</h1>
+    <p class="text-base leading-relaxed mb-5">
+      Your message has been sent successfully. I will get back to you within the next 24 hours.
     </p>
-    <p class="text-base sm:text-lg leading-relaxed mb-5">
-      I leverage this foundation to develop data-driven solutions for complex challenges in behavioral assessment, crisis response, and investigative strategy. Explore my work and connect with me to discuss potential collaborations.
-    </p>
-    <h2 class="text-2xl font-semibold mb-4">Core Competencies</h2>
-    <ul class="list-disc list-inside space-y-2 text-gray-800 mb-5">
-      <li><strong>Behavioral Analysis:</strong> Identifying patterns and predicting outcomes.</li>
-      <li><strong>Data Visualization:</strong> Translating complex data into actionable insights.</li>
-      <li><strong>Psychological Principles:</strong> Applying evidence-based methods to enhance outcomes.</li>
-      <li><strong>Critical Thinking:</strong> Navigating complex challenges with clarity and precision.</li>
-    </ul>
+    <a href="/" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Return to Home</a>
   </main>
 
   
 <footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
-  <div class="flex justify-center gap-4 mb-4">
-    <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
-      <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
-    </a>
-    <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
-      <img src="assets/icons/facebook.svg" alt="Facebook" class="h-6 w-6" />
-    </a>
-    <a href="https://github.com/fortorange33" target="_blank" rel="noopener">
-      <img src="assets/icons/github.svg" alt="GitHub" class="h-6 w-6" />
-    </a>
-    <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener">
-      <img src="assets/icons/orcid.svg" alt="ORCID" class="h-6 w-6" />
-    </a>
-    <a href="https://usajobs.gov" target="_blank" rel="noopener">
-      <img src="assets/icons/usajobs.svg" alt="USAJOBS" class="h-6 w-6" />
-    </a>
-  </div>
   <p class="mb-2">
     <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
     <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
