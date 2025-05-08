@@ -2,6 +2,54 @@ const fs = require('fs');
 const path = require('path');
 
 const newFooter = `
+<style>
+  .site-footer {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #dee2e6;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .footer-branding, .footer-navigation, .footer-legal {
+    flex: 1 1 30%;
+    min-width: 250px;
+  }
+  .footer-logo {
+    max-width: 140px;
+    margin-bottom: 1rem;
+  }
+  .footer-mission {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+  }
+  .footer-links,
+  .legal-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-links li,
+  .legal-links li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-links a,
+  .legal-links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .footer-links a:hover,
+  .legal-links a:hover {
+    text-decoration: underline;
+  }
+</style>
+
 <footer class="site-footer" role="contentinfo" aria-label="Professional profile footer">
   <div class="footer-container">
     <div class="footer-branding">
