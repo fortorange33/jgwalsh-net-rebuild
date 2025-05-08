@@ -1,6 +1,20 @@
 const fs = require('fs');
 const path = require('path');
 
+// Ensure the icons are saved correctly in the following structure:
+// assets/icons/
+// ├── linkedin.svg
+// ├── facebook.svg
+// ├── github.svg
+// ├── orcid.svg
+// ├── usajobs.svg
+
+// Re-run the script to update all HTML files with the new footer:
+// node updateSharedFooter.js
+
+// Deploy the changes to Cloudflare Pages:
+// npx wrangler pages deploy . --project-name=jgwalsh-net-rebuild
+
 const footerPath = path.join(__dirname, 'partials', 'footer.html');
 const newFooter = fs.readFileSync(footerPath, 'utf8');
 const htmlDir = __dirname;
