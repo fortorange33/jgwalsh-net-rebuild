@@ -28,24 +28,19 @@
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
   <!-- Header -->
-  <header style="position:fixed;top:0;left:0;right:0;width:100%;z-index:10;box-shadow:0px 2px 4px rgba(0,0,0,0.2);background:#1e3a8a;color:white;">
-    <nav class="navbar" aria-label="Main navigation" style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:1rem;">
-      <div class="logo" style="display:flex;align-items:center;">
-        <a href="index.html" style="color:white;text-decoration:none;font-weight:700;font-size:1.25rem;">J. Gregory Walsh</a>
-      </div>
-      <ul class="nav-links" style="display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;">
-        <li><a href="about.html" class="active-link" style="color:white;text-decoration:none;">About</a></li>
-        <li><a href="skills.html" style="color:white;text-decoration:none;">Skills</a></li>
-        <li><a href="experience.html" style="color:white;text-decoration:none;">Experience</a></li>
-        <li><a href="projects.html" style="color:white;text-decoration:none;">Projects</a></li>
-        <li><a href="contact.html" style="color:white;text-decoration:none;">Contact</a></li>
-      </ul>
-      <div class="hamburger" aria-label="Open navigation menu" style="display:none;flex-direction:column;gap:4px;cursor:pointer;">
-        <span style="display:block;width:24px;height:3px;background:white;"></span>
-        <span style="display:block;width:24px;height:3px;background:white;"></span>
-        <span style="display:block;width:24px;height:3px;background:white;"></span>
-      </div>
-    </nav>
+  <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-lg font-bold hover:underline">J. Gregory Walsh</a>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="flex gap-6 text-sm">
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="skills.html" class="hover:underline">Skills</a></li>
+          <li><a href="experience.html" class="hover:underline">Experience</a></li>
+          <li><a href="projects.html" class="hover:underline">Projects</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main-content flex-grow pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,23 +62,13 @@
     </ul>
   </main>
 
-  
-
-
-
-
-<footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
-  <p class="mb-2">
-    <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
-    <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
-  </p>
-  <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
-</footer>
-
-
-
-
-
+  <footer class="bg-gray-900 text-white p-6 text-center text-sm">
+    <p class="mb-2">
+      <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
+      <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
+    </p>
+    <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
+  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {

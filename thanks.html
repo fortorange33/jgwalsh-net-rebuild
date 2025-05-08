@@ -9,29 +9,18 @@
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
-  <header style="background-color: #1e3a8a; color: white; position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 10; box-shadow: 0px 2px 4px rgba(0,0,0,0.2);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
-      <a href="/" style="display: flex; align-items: center;">
-        <img src="/assets/images/jgw_career_pf.png" alt="J. Gregory Walsh Logo" style="height: 40px; width: auto;">
-      </a>
-
-      <nav id="desktop-menu" style="display: none; gap: 1.5rem;">
-        <a href="/" style="color: white; text-decoration: none;">Home</a>
-        <a href="/about.html" style="color: white; text-decoration: none;">About</a>
-        <a href="/experience.html" style="color: white; text-decoration: none;">Experience</a>
-        <a href="/projects.html" style="color: white; text-decoration: none;">Projects</a>
-        <a href="/contact.html" style="color: white; text-decoration: none;">Contact</a>
+  <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-lg font-bold hover:underline">J. Gregory Walsh</a>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="flex gap-6 text-sm">
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="skills.html" class="hover:underline">Skills</a></li>
+          <li><a href="experience.html" class="hover:underline">Experience</a></li>
+          <li><a href="projects.html" class="hover:underline">Projects</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
       </nav>
-
-      <button id="mobile-menu-button" style="font-size: 2rem; background: none; border: none; color: white; cursor: pointer;">☰</button>
-    </div>
-
-    <div id="mobile-menu" style="display: none; flex-direction: column; align-items: center; background: #1e3a8a; padding: 1rem;">
-      <a href="/" style="color: white; text-decoration: none; margin: 0.5rem 0;">Home</a>
-      <a href="/about.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">About</a>
-      <a href="/experience.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">Experience</a>
-      <a href="/projects.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">Projects</a>
-      <a href="/contact.html" style="color: white; text-decoration: none; margin: 0.5rem 0;">Contact</a>
     </div>
   </header>
 
@@ -43,19 +32,13 @@
     <a href="/" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Return to Home</a>
   </main>
 
-  
-
-
-<footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
-  <p class="mb-2">
-    <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
-    <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
-  </p>
-  <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
-</footer>
-
-
-
+  <footer class="bg-gray-900 text-white p-6 text-center text-sm">
+    <p class="mb-2">
+      <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
+      <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
+    </p>
+    <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
+  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
