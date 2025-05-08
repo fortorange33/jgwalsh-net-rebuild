@@ -548,4 +548,43 @@ CSS:
     gap: 14px;
   }
 }
-*/
+
+/* --- Standardized Footer Styles --- */
+.site-footer {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.footer-links a:hover {
+  border-color: #fca311;
+}
+
+.footer-credit {
+  margin-top: 0.5rem;
+  opacity: 0.75;
+}
