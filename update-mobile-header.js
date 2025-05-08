@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Mobile-optimized responsive header
+// Shared mobile-responsive header
 const header = `
 <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
@@ -16,6 +16,14 @@ const header = `
     </ul>
   </div>
 </header>`;
+
+// Mobile toggle script
+const toggleScript = `
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', () => {
+    document.getElementById('menu')?.classList.toggle('hidden');
+  });
+</script>`;
 
 // Recursively find all .html files
 function getAllHtmlFiles(dir) {
@@ -32,12 +40,20 @@ function getAllHtmlFiles(dir) {
   return results;
 }
 
-// Apply updated <header> to each file
+// Update <header> and inject <script> if missing
 getAllHtmlFiles('.').forEach(filePath => {
   let content = fs.readFileSync(filePath, 'utf-8');
+
+  // Replace <header> block
   if (/<header[\s\S]*?<\/header>/gi.test(content)) {
     content = content.replace(/<header[\s\S]*?<\/header>/gi, header);
-    fs.writeFileSync(filePath, content, 'utf-8');
-    console.log(`✅ Updated header in ${filePath}`);
   }
+
+  // Inject toggle script before </body> if not already present
+  if (!content.includes('menu-toggle') && content.includes('</body>')) {
+    content = content.replace('</body>', `${toggleScript}\n</body>`);
+  }
+
+  fs.writeFileSync(filePath, content, 'utf-8');
+  console.log(`✅ Updated header and script in ${filePath}`);
 });
