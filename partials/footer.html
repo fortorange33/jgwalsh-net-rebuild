@@ -1,10 +1,41 @@
-
-<footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm sm:text-base py-4 mt-auto">
-  <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a> |
-  <a href="terms-of-service.html" class="hover:underline">Terms of Service</a>
-</footer>
-<script>
-  document.getElementById('menu-toggle')?.addEventListener('click', function () {
-    document.getElementById('menu')?.classList.toggle('hidden');
-  });
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/tailwind.min.css" rel="stylesheet">
+  <title>Footer | J. Gregory Walsh</title>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white flex flex-col min-h-screen overflow-x-hidden">
+  <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">J. Gregory Walsh</a>
+      <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
+    </div>
+    <nav>
+      <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base text-white px-4" role="navigation">
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="skills.html" class="hover:underline">Skills</a></li>
+        <li><a href="experience.html" class="hover:underline">Experience</a></li>
+        <li><a href="projects.html" class="hover:underline">Projects</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">
+    <!-- PAGE CONTENT GOES HERE -->
+  </main>
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm sm:text-base py-4 mt-auto">
+    <ul class="flex justify-center space-x-4">
+      <li><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html" class="hover:underline">Terms of Service</a></li>
+    </ul>
+    <p class="text-gray-400 mt-2">© 2025 J. Gregory Walsh. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
