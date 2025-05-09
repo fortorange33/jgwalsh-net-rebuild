@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card | J. Gregory Walsh</title>
+  <link href="assets/css/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white flex flex-col min-h-screen">
+
+  <!-- Header (Minimal Navigation or Logo Only for Card View) -->
+  <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-lg font-bold hover:underline">J. Gregory Walsh</a>
+      <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
+    </div>
+    <nav>
+      <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base">
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Business Card Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10 flex-grow text-center space-y-6">
+    <h1 class="text-3xl sm:text-4xl font-bold">J. Gregory Walsh</h1>
+    <p class="text-lg text-gray-700 dark:text-gray-300">Federal Law Enforcement Candidate | Behavioral Analyst | Data Specialist</p>
+
+    <img src="assets/images/qr-code-jgwalsh-profile.png" alt="QR Code linking to professional profile" class="mx-auto w-40 h-40 border-2 border-blue-900 rounded-md hover:opacity-90 transition" loading="lazy">
+
+    <div class="space-y-2">
+      <p><strong>Email:</strong> <a href="mailto:jgwalsh@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">jgwalsh@proton.me</a></p>
+      <p><strong>Website:</strong> <a href="https://www.jgwalsh.net" class="text-blue-600 dark:text-blue-400 hover:underline">www.jgwalsh.net</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jgregorywalsh" class="text-blue-600 dark:text-blue-400 hover:underline">linkedin.com/in/jgregorywalsh</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm sm:text-base py-4 mt-auto">
+    <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+    <a href="terms-of-service.html" class="hover:underline">Terms of Service</a>
+  </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
