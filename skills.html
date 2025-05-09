@@ -8,19 +8,16 @@
 </head>
 <body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white flex flex-col min-h-screen">
 
-  <header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <a href="index.html" class="text-xl font-bold">J. Gregory Walsh</a>
-      <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
-      <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base" role="navigation">
-        <li><a href="about.html" class="hover:underline">About</a></li>
-        <li><a href="skills.html" class="hover:underline">Skills</a></li>
-        <li><a href="experience.html" class="hover:underline">Experience</a></li>
-        <li><a href="projects.html" class="hover:underline">Projects</a></li>
-        <li><a href="contact.html" class="hover:underline">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+  <!-- Include Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading header:', err));
+  </script>
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">
     <h1 class="text-4xl sm:text-5xl font-bold text-center mb-6">Skills & Competencies</h1>
