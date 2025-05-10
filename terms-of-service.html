@@ -9,16 +9,8 @@
 <body class="bg-white text-gray-900">
   
 
-<!-- Include Header -->
-<div id="header-placeholder"></div>
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('header-placeholder').innerHTML = html;
-    })
-    .catch(err => console.error('Error loading header:', err));
-</script>
+<!-- Include header -->
+<!--#include virtual="partials/header.html" -->
 
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">
