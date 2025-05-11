@@ -25,18 +25,26 @@
   <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">
     <!-- PAGE CONTENT GOES HERE -->
   </main>
-  <footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm sm:text-base py-4 mt-auto">
-    <div class="flex justify-center items-center space-x-4 mb-2">
-      <a href="https://linkedin.com" aria-label="LinkedIn"><img src="..." alt="LinkedIn" class="h-5"></a>
-      <a href="https://facebook.com" aria-label="Facebook"><img src="..." alt="Facebook" class="h-5"></a>
-      <a href="https://github.com/fortorange33" aria-label="GitHub"><img src="..." alt="GitHub" class="h-5"></a>
-      <!-- etc. -->
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm sm:text-base py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-4">
+      <div class="flex justify-center items-center space-x-6">
+        <a href="https://linkedin.com" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6">
+        </a>
+        <a href="https://facebook.com" aria-label="Facebook">
+          <img src="/assets/icons/facebook.svg" alt="Facebook" class="h-6 w-6">
+        </a>
+        <a href="https://github.com/fortorange33" aria-label="GitHub">
+          <img src="/assets/icons/github.svg" alt="GitHub" class="h-6 w-6">
+        </a>
+        <!-- Add other social icons as needed -->
+      </div>
+      <ul class="flex justify-center space-x-4">
+        <li><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html" class="hover:underline">Terms of Service</a></li>
+      </ul>
+      <p class="text-gray-400 mt-2">© 2025 J. Gregory Walsh. All rights reserved.</p>
     </div>
-    <ul class="flex justify-center space-x-4">
-      <li><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
-      <li><a href="terms-of-service.html" class="hover:underline">Terms of Service</a></li>
-    </ul>
-    <p class="text-gray-400 mt-2">© 2025 J. Gregory Walsh. All rights reserved.</p>
   </footer>
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
