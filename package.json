@@ -1,6 +1,10 @@
 {
   "dependencies": {
-    "tailwindcss": "^4.1.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
   },
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --watch"
