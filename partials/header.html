@@ -4,21 +4,23 @@
   - Semantic HTML and ARIA roles
   - Responsive navigation: horizontal on desktop, collapsible on mobile
 -->
-<header class="bg-blue-900 text-white p-4 shadow-md">
-  <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center px-4 py-2">
+<header class="bg-blue-900 text-white p-4 shadow-md" role="banner">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
     <a href="index.html" class="text-xl font-bold">J. Gregory Walsh</a>
-    <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl">☰</button>
+    <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
   </div>
-  <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
-    <a href="index.html" class="hover:underline">Home</a>
-    <a href="experience.html" class="hover:underline">Professional Background</a>
-    <a href="skills.html" class="hover:underline">Career Transition</a>
-    <a href="projects.html" class="hover:underline">Projects & Publications</a>
-    <a href="contact.html" class="hover:underline">Contact</a>
+  <nav>
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 mt-4 md:mt-0" role="navigation">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="experience.html" class="hover:underline">Professional Background</a></li>
+      <li><a href="skills.html" class="hover:underline">Career Transition</a></li>
+      <li><a href="projects.html" class="hover:underline">Projects & Publications</a></li>
+      <li><a href="contact.html" class="hover:underline">Contact</a></li>
+    </ul>
   </nav>
-  <script>
-    document.getElementById('menu-toggle').onclick = () => {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    };
-  </script>
 </header>
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('menu').classList.toggle('hidden');
+  });
+</script>
