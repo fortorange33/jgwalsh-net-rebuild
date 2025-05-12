@@ -1,4 +1,4 @@
-<nav class="bg-gray-800 text-white">
+<nav class="bg-gray-800 text-white w-full md:w-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
@@ -21,21 +21,23 @@
       </div>
 
       <!-- Navigation Links -->
-      <div class="hidden md:flex space-x-4">
-        <a href="#" class="hover:text-gray-300">Home</a>
-        <a href="#" class="hover:text-gray-300">About</a>
-        <a href="#" class="hover:text-gray-300">Services</a>
-        <a href="#" class="hover:text-gray-300">Contact</a>
-      </div>
+      <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base">
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="skills.html" class="hover:underline">Skills</a></li>
+        <li><a href="experience.html" class="hover:underline">Experience</a></li>
+        <li><a href="projects.html" class="hover:underline">Projects</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
     </div>
   </div>
 
   <!-- Mobile Menu -->
   <div class="hidden md:hidden" id="mobile-menu">
-    <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Home</a>
-    <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">About</a>
-    <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Services</a>
-    <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Contact</a>
+    <a href="about.html" class="block px-4 py-2 text-sm hover:bg-gray-700">About</a>
+    <a href="skills.html" class="block px-4 py-2 text-sm hover:bg-gray-700">Skills</a>
+    <a href="experience.html" class="block px-4 py-2 text-sm hover:bg-gray-700">Experience</a>
+    <a href="projects.html" class="block px-4 py-2 text-sm hover:bg-gray-700">Projects</a>
+    <a href="contact.html" class="block px-4 py-2 text-sm hover:bg-gray-700">Contact</a>
   </div>
 </nav>
 
@@ -43,10 +45,12 @@
   // Toggle functionality for the mobile menu
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
+  const menu = document.getElementById('menu');
 
   mobileMenuButton.addEventListener('click', () => {
     const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
     mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
     mobileMenu.classList.toggle('hidden');
+    menu.classList.toggle('hidden');
   });
 </script>

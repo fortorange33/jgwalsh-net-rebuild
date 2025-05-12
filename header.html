@@ -1,12 +1,27 @@
 <header class="bg-blue-900 text-white py-3" role="banner">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
     <h1 class="font-bold text-lg">J. Gregory Walsh</h1>
-    <div class="space-x-4 text-sm">
+    <button id="menu-toggle" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-white" aria-label="Toggle navigation">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <nav id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:space-x-6 mt-4 md:mt-0 text-sm">
       <a href="/index.html" class="hover:underline">Home</a>
       <a href="/about.html" class="hover:underline">About</a>
       <a href="/projects.html" class="hover:underline">Projects</a>
       <a href="/contact.html" class="hover:underline">Contact</a>
       <a href="/terms-of-service.html" class="hover:underline">Terms</a>
-    </div>
+    </nav>
   </div>
 </header>
+
+<script>
+  // Toggle functionality for the responsive menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
