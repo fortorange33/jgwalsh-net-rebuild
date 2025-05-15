@@ -3,91 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J. Gregory Walsh</title>
+  <title>About | J. Gregory Walsh</title>
+  <meta name="description" content="Learn more about J. Gregory Walsh, a professional with expertise in psychology, data analysis, and federal service transition.">
   <link href="assets/css/tailwind.min.css" rel="stylesheet">
   <link href="assets/css/site.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
-  
-<header class="bg-gray-900 text-white px-4 py-4 shadow">
-  <div class="container mx-auto px-4 flex items-center justify-between">
-    <h1 class="text-xl font-semibold">JG Walsh</h1>
-    <nav class="hidden md:flex gap-6 text-sm font-medium">
-      <a href="/index.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Home</a>
-      <a href="/background.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Background</a>
-      <a href="/transition.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Transition</a>
-      <a href="/projects.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Projects</a>
-      <a href="/contact.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Contact</a>
-    </nav>
-    <button id="nav-toggle" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" class="md:hidden text-2xl">☰</button>
-  </div>
-</header>
-
-<main class="container mx-auto px-4 bg-gray-50 dark:bg-gray-900" role="main">
-  <section class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-blue-900 mb-5 text-center">About | James Gregory Walsh</h1>
-    <p class="text-base leading-relaxed mb-5">
-      Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy.
-    </p>
-    <p class="text-base leading-relaxed mb-5">
-      My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.
-    </p>
-    <p class="text-base leading-relaxed mb-5">
-      Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.
-    </p>
-    <p class="text-base leading-relaxed mb-5">
-      My goal is to bridge the gap between psychological science and practical application in high-stakes environments. I am passionate about using data to inform better decision-making, enhance public safety, and promote accountability. Explore my <a href="/projects.html" class="text-blue-600 hover:underline">projects</a> and <a href="/experience.html" class="text-blue-600 hover:underline">experience</a> to learn more, or
-      <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
-    </p>
-  </section>
-</main>
-
-<footer class="bg-gray-800 text-gray-300 text-sm">
-  <section class="container mx-auto px-4 py-8">
-    <div class="flex flex-col items-center gap-2">
-      <div class="flex gap-3">
-        <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
-          <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="w-6 h-auto" />
-        </a>
-        <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
-          <img src="assets/icons/facebook.svg" alt="Facebook" class="w-6 h-auto" />
-        </a>
-      </div>
-      <p class="text-center">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+  <header class="bg-gray-900 text-white px-4 py-4 shadow">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <h1 class="text-xl font-semibold">JG Walsh</h1>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="/index.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Home</a>
+        <a href="/background.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Background</a>
+        <a href="/transition.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Transition</a>
+        <a href="/projects.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Projects</a>
+        <a href="/contact.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Contact</a>
+      </nav>
+      <button id="nav-toggle" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" class="md:hidden text-2xl">☰</button>
     </div>
-  </section>
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById('mobile-menu-button');
-    const desktopMenu = document.getElementById('desktop-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (button && desktopMenu && mobileMenu) {
-      button.addEventListener('click', () => {
-        if (mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.remove('hidden');
-        } else {
-          mobileMenu.classList.add('hidden');
-        }
-      });
-
-      const handleResize = () => {
-        if (window.innerWidth >= 768) {
-          desktopMenu.classList.remove('hidden');
-          mobileMenu.classList.add('hidden');
-          button.style.display = 'none';
-        } else {
-          desktopMenu.classList.add('hidden');
-          button.style.display = 'block';
-        }
-      };
-
-      window.addEventListener('resize', handleResize);
-      handleResize();
-    }
-  });
-</script>
+  </header>
+  <main class="bg-gray-50 dark:bg-gray-900 py-10 px-4">
+    <section class="container mx-auto max-w-3xl">
+      <h1 class="text-4xl font-bold text-blue-900 mb-5 text-center">About | James Gregory Walsh</h1>
+      <p class="text-base leading-relaxed mb-5">
+        Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy.
+      </p>
+      <p class="text-base leading-relaxed mb-5">
+        My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.
+      </p>
+      <p class="text-base leading-relaxed mb-5">
+        Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.
+      </p>
+      <p class="text-base leading-relaxed mb-5">
+        My goal is to bridge the gap between psychological science and practical application in high-stakes environments. I am passionate about using data to inform better decision-making, enhance public safety, and promote accountability. Explore my <a href="/projects.html" class="text-blue-600 hover:underline">projects</a> and <a href="/experience.html" class="text-blue-600 hover:underline">experience</a> to learn more, or
+        <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
+      </p>
+      <a href="/contact.html" class="inline-block mt-8 px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">
+        Contact Me
+      </a>
+    </section>
+  </main>
+  <footer class="bg-gray-800 text-gray-300 text-sm">
+    <section class="container mx-auto px-4 py-8">
+      <div class="flex flex-col items-center gap-2">
+        <div class="flex gap-3">
+          <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="w-6 h-auto" />
+          </a>
+          <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
+            <img src="assets/icons/facebook.svg" alt="Facebook" class="w-6 h-auto" />
+          </a>
+        </div>
+        <p class="text-center">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
