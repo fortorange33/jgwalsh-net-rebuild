@@ -5,46 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/tailwind.min.css" rel="stylesheet">
   <link href="assets/css/site.css" rel="stylesheet">
-  <title>J. Gregory Walsh</title>
+  <title>Projects - J. Gregory Walsh</title>
+  <meta name="description" content="Explore the selected projects of J. Gregory Walsh, showcasing expertise in behavioral analysis, data visualization, and problem-solving.">
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen" data-theme="light">
-  <!-- Include header -->
-  <!--#include virtual="partials/header.html" -->
+  <!-- Updated header with ARIA attributes and responsive navigation -->
+  <header class="bg-white shadow dark:bg-gray-800">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-900 dark:text-white">J. Gregory Walsh</a>
+      <button id="mobile-menu-button" aria-label="Toggle navigation" aria-expanded="false" class="md:hidden text-gray-900 dark:text-white">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <nav id="desktop-menu" class="hidden md:flex space-x-6">
+        <a href="about.html" class="text-gray-900 dark:text-white hover:underline">About</a>
+        <a href="experience.html" class="text-gray-900 dark:text-white hover:underline">Experience</a>
+        <a href="projects.html" class="text-gray-900 dark:text-white hover:underline">Projects</a>
+        <a href="contact.html" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+      </nav>
+      <nav id="mobile-menu" class="hidden flex-col space-y-4 mt-4 md:hidden">
+        <a href="about.html" class="text-gray-900 dark:text-white hover:underline">About</a>
+        <a href="experience.html" class="text-gray-900 dark:text-white hover:underline">Experience</a>
+        <a href="projects.html" class="text-gray-900 dark:text-white hover:underline">Projects</a>
+        <a href="contact.html" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">
-<h1 class="text-4xl font-bold text-blue-900 mb-5">Selected Projects</h1>
+  <main class="container mx-auto max-w-4xl px-4 sm:px-6 md:px-10 py-10 flex-grow">
+    <h1 class="text-4xl font-bold text-blue-900 mb-5">Selected Projects</h1>
     <p class="text-base leading-relaxed mb-5">
       The projects below represent my applied work in behavioral analysis, law enforcement data visualization, and analytical problem-solving.
     </p>
-    <!-- Additional project content here -->
-</main>
 
-  
-<footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
-  <div class="flex justify-center gap-4 mb-4">
-    <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
-      <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
-    </a>
-    <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
-      <img src="assets/icons/facebook.svg" alt="Facebook" class="h-6 w-6" />
-    </a>
-    <a href="https://github.com/fortorange33" target="_blank" rel="noopener">
-      <img src="assets/icons/github.svg" alt="GitHub" class="h-6 w-6" />
-    </a>
-    <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener">
-      <img src="assets/icons/orcid.svg" alt="ORCID" class="h-6 w-6" />
-    </a>
-    <a href="https://usajobs.gov" target="_blank" rel="noopener">
-      <img src="assets/icons/usajobs.svg" alt="USAJOBS" class="h-6 w-6" />
-    </a>
-  </div>
-  <p class="mb-2">
-    <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
-    <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
-  </p>
-  <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
-</footer>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold mb-6">Project Highlights</h2>
+      <!-- Add project details here -->
+    </section>
+  </main>
 
+  <!-- Reused footer with consistent spacing -->
+  <footer class="site-footer bg-gray-900 text-white mt-10 p-6 text-center text-sm">
+    <div class="flex justify-center gap-4 mb-4">
+      <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
+      </a>
+      <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
+        <img src="assets/icons/facebook.svg" alt="Facebook" class="h-6 w-6" />
+      </a>
+      <a href="https://github.com/fortorange33" target="_blank" rel="noopener">
+        <img src="assets/icons/github.svg" alt="GitHub" class="h-6 w-6" />
+      </a>
+      <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener">
+        <img src="assets/icons/orcid.svg" alt="ORCID" class="h-6 w-6" />
+      </a>
+      <a href="https://usajobs.gov" target="_blank" rel="noopener">
+        <img src="assets/icons/usajobs.svg" alt="USAJOBS" class="h-6 w-6" />
+      </a>
+    </div>
+    <p class="mb-2">
+      <a href="privacy-policy.html" class="text-blue-400 hover:underline">Privacy Policy</a> |
+      <a href="terms-of-service.html" class="text-blue-400 hover:underline">Terms of Service</a>
+    </p>
+    <p class="text-gray-400">© 2025 J. Gregory Walsh. All rights reserved.</p>
+  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
