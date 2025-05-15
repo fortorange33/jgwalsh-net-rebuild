@@ -19,4 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('active');
     });
   }
+
+  document.getElementById('nav-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+    this.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
+  });
 });
