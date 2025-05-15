@@ -7,13 +7,25 @@
   <link href="assets/css/tailwind.min.css" rel="stylesheet" />
 </head>
 <body>
-  <div id="header-placeholder"></div>
-  <script src="update-header-layouts.js"></script>
+  <header class="bg-blue-900 text-white py-3" role="banner">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="font-bold text-lg">J. Gregory Walsh</h1>
+      <button id="menu-toggle" aria-label="Toggle navigation menu" class="md:hidden text-2xl focus:outline-none">☰</button>
+    </div>
+    <nav>
+      <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base">
+        <li><a href="/index.html" class="hover:underline">Home</a></li>
+        <li><a href="/about.html" class="hover:underline">About</a></li>
+        <li><a href="/projects.html" class="hover:underline">Projects</a></li>
+        <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+        <li><a href="/terms-of-service.html" class="hover:underline">Terms</a></li>
+      </ul>
+    </nav>
+  </header>
   <script>
-    fetch('/partials/header.html')
-      .then(response => response.text())
-      .then(html => document.getElementById('header-placeholder').innerHTML = html)
-      .catch(err => console.error('Header load error:', err));
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
   </script>
   <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 flex-grow">
     <!-- Main content here -->
