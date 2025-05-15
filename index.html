@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J. Gregory Walsh | Behavioral Analyst and Federal Service Candidate</title>
   <meta name="description" content="Official portfolio of J. Gregory Walsh. Featuring background in psychology, crisis intervention, data analysis, and a transition to federal law enforcement.">
   <link rel="icon" type="image/png" href="/assets/icons/favicon.png">
-  <link href="assets/css/tailwind.min.css" rel="stylesheet" />
+  <link href="assets/css/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
   <header class="bg-gray-900 text-white px-4 py-4 shadow">
-    <div class="container mx-auto px-4 flex items-center justify-between">
-      <h1 class="text-xl font-semibold">JG Walsh</h1>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="/index.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Home</a>
-        <a href="/background.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Background</a>
-        <a href="/transition.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Transition</a>
-        <a href="/projects.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Projects</a>
-        <a href="/contact.html" class="hover:underline text-gray-100 hover:text-blue-300 transition hover:bg-gray-800 active:bg-gray-700">Contact</a>
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="/index.html" class="text-xl font-bold">J. Gregory Walsh</a>
+      <button id="nav-toggle" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" class="md:hidden">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      </button>
+      <nav>
+        <ul id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row mt-4 md:mt-0 text-sm sm:text-base">
+          <li><a href="/about.html" class="hover:underline">About</a></li>
+          <li><a href="/experience.html" class="hover:underline">Experience</a></li>
+          <li><a href="/projects.html" class="hover:underline">Projects</a></li>
+          <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+        </ul>
       </nav>
-      <button id="nav-toggle" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" class="md:hidden text-2xl">☰</button>
     </div>
   </header>
+
+  <main class="bg-gray-50 dark:bg-gray-900 py-10 px-4 flex-grow">
+    <section class="container mx-auto max-w-3xl text-center">
+      <h1 class="text-3xl font-bold mb-4">Welcome</h1>
+      <p class="mb-6 text-lg">This site showcases my experience in psychology, data analysis, and my transition into federal law enforcement.</p>
+      <a href="/contact.html" class="inline-block px-6 py-3 bg-blue-700 text-white rounded hover:bg-blue-800 transition">Contact Me</a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 text-sm py-6">
+    <div class="max-w-7xl mx-auto flex flex-col items-center gap-4">
+      <div class="flex gap-4 items-center">
+        <a href="https://www.linkedin.com/in/jgregorywalsh" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="h-6 w-6 hover:opacity-80">
+        </a>
+        <a href="https://www.facebook.com/jgregwalsh" aria-label="Facebook">
+          <img src="/assets/icons/facebook.svg" alt="Facebook" class="h-6 w-6 hover:opacity-80">
+        </a>
+        <a href="https://saintsnetwork.siena.edu/profile/gregwalsh/" aria-label="Siena College Profile">
+          <img src="/assets/icons/siena-logo-icon.svg" alt="Siena" class="h-6 w-6 hover:opacity-80">
+        </a>
+        <a href="mailto:jgwalsh@bu.edu" aria-label="ResearchGate">
+          <img src="/assets/icons/researchgate-icon.svg" alt="ResearchGate" class="h-6 w-6 hover:opacity-80">
+        </a>
+        <a href="https://www.usajobs.gov/applicant/profile/" aria-label="USAJOBS">
+          <img src="/assets/icons/opm-usajobs.svg" alt="USAJOBS" class="h-6 w-6 hover:opacity-80">
+        </a>
+      </div>
+      <p class="text-center text-xs">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script>
     document.getElementById('nav-toggle').addEventListener('click', function () {
       const menu = document.getElementById('menu');
@@ -29,39 +64,5 @@
       this.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
     });
   </script>
-  <script>
-    window.addEventListener("resize", () => console.log("Viewport width:", window.innerWidth));
-  </script>
-  <main class="bg-gray-50 dark:bg-gray-900 py-10 px-4">
-    <section class="container mx-auto max-w-3xl">
-      <h1 class="text-3xl font-bold mb-4">Welcome</h1>
-      <p class="mb-6 text-lg">This site showcases my experience in psychology, data analysis, and my transition into federal law enforcement.</p>
-      <a href="/about.html" class="inline-block px-6 py-3 bg-blue-700 text-white rounded hover:bg-blue-800 transition">Learn More About Me</a>
-    </section>
-  </main>
-  <footer class="bg-gray-800 text-gray-300 text-sm">
-    <section class="container mx-auto px-4 py-8">
-      <div class="flex flex-col items-center gap-2">
-        <div class="flex gap-3">
-          <a href="https://linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener">
-            <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="w-6 h-auto" />
-          </a>
-          <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener">
-            <img src="assets/icons/facebook.svg" alt="Facebook" class="w-6 h-auto" />
-          </a>
-          <a href="https://github.com/fortorange33" target="_blank" rel="noopener">
-            <img src="assets/icons/github.svg" alt="GitHub" class="w-6 h-auto" />
-          </a>
-          <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener">
-            <img src="assets/icons/orcid.svg" alt="ORCID" class="w-6 h-auto" />
-          </a>
-          <a href="https://usajobs.gov" target="_blank" rel="noopener">
-            <img src="assets/icons/usajobs.svg" alt="USAJOBS" class="w-6 h-auto" />
-          </a>
-        </div>
-        <p class="text-center">&copy; 2025 J. Gregory Walsh. All rights reserved.</p>
-      </div>
-    </section>
-  </footer>
 </body>
 </html>
